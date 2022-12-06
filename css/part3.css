@@ -1,0 +1,211 @@
+/* color : #faf5ea(배경색), #3b3a37(글자색), 92ab8f(초록), f8d7de(분홍), f6ef87(노랑) */
+
+/* 글자 폰트 */
+/* font-family: 'Dongle', sans-serif, monospace; 본문체 
+    / font-family: 'Black Han Sans', sans-serif, monospace;강조체 */
+
+    html, body{
+        height: 100%;
+        font-size: 30px;
+        color: #3b3a37;
+        font-family: 'Dongle', sans-serif, monospace;
+        box-sizing: border-box;
+    }
+    a{
+        color: #3b3a37;
+        font-family: 'Dongle', sans-serif, monospace;
+        text-decoration: none;
+    }
+    img{
+        display:  block;
+    }
+    
+/* nav */
+header{
+    width: 90px;
+    height: 100%;
+    /* background-color: #faf5ea80; */
+    box-shadow: 0 0 15px #333;
+    position: fixed;
+    top: 0; left: 0; bottom:0;
+    
+    z-index: 999;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: 90px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 80px;
+    text-align: center;
+}
+nav span{
+    font-weight: 100;
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav > p {
+    display: block;
+    width: 100%;
+    height: 90px;
+
+    position:absolute;
+    bottom:0%;
+}
+nav > p > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 16px;
+    line-height: 90px;
+    text-align: center;
+}
+nav > p > a:hover {
+    color: crimson;
+    transition: 400ms;
+}
+    
+/* page10 */
+#page12{
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #f8d7de;
+}
+#page12 > article {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 90px;
+
+    /* background-color: aquamarine; */
+}
+
+/* fix 박스 */
+.fixed_box{
+    background: url(../images/Asset\ 2.png) no-repeat;
+    width: 328px;
+    height: 728px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* background-color: azure; */
+}
+.fixed_box > span {
+    width: 50px;
+    padding: 0 10px;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: 29%;
+
+
+    /* background-color: rosybrown; */
+}
+.worksname{
+    width: 70%;
+    /* height: 500px; */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-right: 30px;
+    display: block;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    /* background-color: antiquewhite; */
+}
+.worksname > li{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+
+    background-color: #f8d7de;
+}
+
+/* 컨텐츠 */
+#webdesign_wrap{
+    width: 75%;
+    overflow: hidden;
+    float: right;
+
+    /* background-color: aqua; */
+}
+.web_cons{
+    background:url(../images/p10_bg2.png) no-repeat;
+    width: 734px;
+    height: 858px;
+    margin: 50px auto;
+
+    background-position: center;
+
+    position: relative;
+
+}
+.web_cons_wrap{
+    background: url(../images/p10_el_01.png) no-repeat;
+    width: 477px;
+    height: 477px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.web_cons_wrap > a {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 477px;
+    color: #3b3a37;
+
+    transition: all 0.2s;
+
+    /* background-color:aquamarine ; */
+}
+.web_cons_wrap > a:hover {
+    background-color: black;
+    opacity: 90%;
+    color: #faf5ea;
+}
+.web_cons > p {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+
+    font-size: 40px;
+    text-align: center;
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* background-color: aqua; */
+}

@@ -1,0 +1,105 @@
+/* ------------------------------------------------------------------------ */
+html, body { height: 100%; }
+
+body { overflow: hidden; }
+
+body.debug > #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 30%;
+    height: 30%;
+    border: 10px solid orange;
+    /* overflow: hidden; */
+}
+
+#panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 600%;
+    height: 500%;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16.67%;
+    height: 20%;
+    background-color: #171717;
+}
+
+.page:nth-child(even) { background-color: #333; }
+
+.page:nth-child(2) { top: 20%; left: 0; }
+.page:nth-child(3) { top: 20%; left: 16.67%; }
+.page:nth-child(4) { top: 20%; left: 33.33%; }
+.page:nth-child(5) { top: 40%; left: 33.33%; }
+.page:nth-child(6) { top: 60%; left: 33.33%; }
+.page:nth-child(7) { top: 60%; left: 50%; }
+.page:nth-child(8) { top: 60%; left: 66.67%; }
+.page:nth-child(9) { top: 60%; left: 83.33%; }
+.page:nth-child(10) { top: 80%; left: 83.33%; }
+
+.page > h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 300px;
+    font-weight: 900;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+body.debug > div > div > .page > h2 { font-size: 100px; }
+
+/* ------------------------------------------------------------------------ */
+#indicator {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+#indicator > li {
+    /* float: right; */
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+
+#indicator > li:nth-child(1),
+#indicator > li:nth-child(2),
+#indicator > li:nth-child(6),
+#indicator > li:nth-child(10) { opacity: 0.6;}
+
+#indicator > li:not(:last-child) { margin-bottom: 10px; }
+
+#indicator > li.on {
+    /* width: 40px; */
+    height: 40px;
+    cursor: default;
+}
+
+#indicator > li > span { display: none; }
+
+/* ------------------------------------------------------------------------ */
+#debug {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    outline: none;
+    cursor: pointer;
+}

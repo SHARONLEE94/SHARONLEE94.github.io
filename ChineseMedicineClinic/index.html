@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/28ff56e9f4.js" crossorigin="anonymous"></script>
+    
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 스크립트 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <title>주월 한방병원</title>
+
+</head>
+<body>
+<!--네비 -->
+    <div id="intronav"> <!-- 스크롤시 사라질 부분 -->
+        <ul>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+    </div><!-- 스크롤시 사라질 부분 끝 -->
+    
+        <div id="mainnav">
+            <a href="../medical/index.html">
+                <img src="image/logo.png" alt="로고이미지">
+            </a>
+
+            <nav>
+                <ul id="mainmenu">
+                    <li data-target="#hospital-introduce"><a href="#">병원소개</a></li>
+                    <li data-target="#clinic"><a href="#">클리닉</a></li>
+                    <li data-target="#remedial"><a href="#">재활치료</a></li>
+                    <li data-target="#backbone-joint"><a href="../medical/part1.html">척추관절질환</a></li>
+                    <li data-target="#herbal"><a href="#">한약치료</a></li>
+                    <li data-target="#alarm"><a href="../medical/part2.html">공지사항</a></li>
+                </ul>
+                <div id="subwrap">
+                    <ul id="hospital-introduce" class="subwrap-contents">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">의료진 소개</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">병원 둘러보기</a></li>
+                    </ul>
+                    <ul id="clinic" class="subwrap-contents">
+                        <li><a href="#">만성두통</a></li>
+                        <li><a href="#">좌골신경통</a></li>
+                        <li><a href="#">교통사고 클리닉</a></li>
+                        <li><a href="#">척추교정</a></li>
+                    </ul>
+                    <ul id="remedial" class="subwrap-contents">
+                        <li><a href="#">각종 수술 후 재활</a></li>
+                        <li><a href="#">중풍 재활</a></li>
+                    </ul>
+                    <ul id="backbone-joint" class="subwrap-contents">
+                        <li><a href="../medical/part1.html">속근육 치료</a></li>
+                        <li><a href="../medical/part1.html">척추관절질환</a></li>
+                        <li><a href="../medical/part1.html">도수추나치료</a></li>
+                    </ul>
+                    <ul id="herbal" class="subwrap-contents">
+                        <li><a href="#">미미환&탕</a></li>
+                        <li><a href="#">녹용 성장탕</a></li>
+                        <li><a href="#">총명 공진단</a></li>
+                    </ul>
+                    <ul id="alarm" class="subwrap-contents">
+                        <li><a href="../medical/part2.html">공지사항</a></li>
+                        <li><a href="../medical/part4.html">건의사항</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <form id="search1">
+                <input type="text" id="searchText" placeholder="검색어를 입력하세요">
+                <a href="#"><img src="image/돋보기.png" alt="돋보기"></a>
+            </form>
+            
+            <!--<div id="search2">  스크롤 시 변경될 부분
+                <button><img src="image/돋보기.png" alt="돋보기"></button>
+                <a href="#">온라인예약</a>
+            </div>  스크롤 시 변경될 부분 끝 -->
+        </div>
+<!--네비end-->
+
+    <!-- 메인페이지 -->
+ <!--페이지1-->
+    <section id="slide-wrap">
+        <div id="slide">
+            <img src="image/slide3.png" alt="슬라이드 이미지3">
+            <img src="image/slide1.png" alt="슬라이드 이미지1">
+            <img src="image/slide2.png" alt="슬라이드 이미지2">
+        </div>
+    </section>
+    <secion id="reserve">
+        <div>
+            <ul  id="info">
+                <li><a href="#">진료 안내</a></li>
+                <li><a href="#">진료비 안내</a></li>
+                <li><a href="#">증명서 발급</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+        </div>
+        <article id="re-box">
+            <div id="box1" class="box-form">
+                <!-- 박스1 -->
+                <form>
+                    <h3>온라인 예약</h3>
+                    <p class="one">
+                        <span>지역</span>
+                        <input type="text">
+                    </p>
+                    <p class="two">
+                        <input type="button" class="first-visit" value="초진" id="visit1"><input type="button" class="re-visit" value="재진" id="visit2">
+                    </p>
+                    <p class="one">
+                        <span>이름</span>
+                        <input type="text">
+                    </p>
+                    <p class="three">
+                        <input type="tel" placeholder="연락처를 입력해주세요.">
+                    </p>
+                    <input type="submit" class="reserve-button" value="예약하기">
+                </form>
+            </div>
+
+                <!-- 박스2 -->
+            <div id="box2" class="box-form">
+                <form>
+                    <h3>입원 상담</h3>
+                    <p class="one">
+                        <span>지역</span>
+                        <input type="text">
+                    </p>
+                    <p class="two">
+                        <input type="button" class="first-visit" value="초진"><input type="button" class="re-visit" value="재진">
+                    </p>
+                    <p class="one">
+                        <span>이름</span>
+                        <input type="text">
+                    </p>
+                    <p class="three">
+                        <input type="tel" placeholder="연락처를 입력해주세요.">
+                    </p>
+                    <input type="submit" class="reserve-button" value="상담신청">
+                </form>
+            </div>
+            <!-- 주의사항 -->
+            <p>※ 기입하신 정보는 상담 또는 예약 목적 외의 다른 목적으로 절대 사용되지 않습니다.</p>
+        </article>
+    </section>
+<!--페이지1 end-->
+
+<!--페이지2-->
+    <section id="therapy" >
+        <article id="therapysec1" class="scrollevent top">
+            <img id="pointer-head" class="point" src="image/pointer.png" alt="머리">
+            <img id="pointer-neck" class="point" src="image/pointer.png" alt="목/턱">
+            <img id="pointer-shoulder" class="point" src="image/pointer.png" alt="어깨">
+            <img id="pointer-spine" class="point" src="image/pointer.png" alt="척추">
+            <img id="pointer-wrist" class="point" src="image/pointer.png" alt="손목">
+            <img id="pointer-pelvis" class="point" src="image/pointer.png" alt="골반">
+            <img id="pointer-knee" class="point" src="image/pointer.png" alt="무릎">
+            <img id="pointer-ankle" class="point" src="image/pointer.png" alt="발목">
+            <div id="comments">
+                <p>속근육으로 치료되는 질환</p>
+                <!-- <li> 가상선택자로 라인 그리기 </li> -->
+                <p>"속"근육 1cm 차이가 결과를 바꿉니다.</p>
+            </div>
+            <ul id="circle">
+                <li data-pointer="#pointer-head">머리</li>
+                <li data-pointer="#pointer-neck">목/턱</li>
+                <li data-pointer="#pointer-shoulder">어깨</li>
+                <li data-pointer="#pointer-spine">척추</li>
+                <li data-pointer="#pointer-wrist">손목</li>
+                <li data-pointer="#pointer-pelvis">골반</li>
+                <li data-pointer="#pointer-knee">무릎</li>
+                <li data-pointer="#pointer-ankle">발목</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="therapysec2">
+        <div class="scrollevent top">
+            <p>클리닉</p>
+            <ul>
+                <li><a href="#">만성두통</a></li>
+                <li><a href="#">치골 신경통</a></li>
+                <li><a href="#">척추교정</a></li>
+                <li><a href="#">교통사고 클리닉</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="non-surgery" >
+        <article id="nonsec1" class="scrollevent left">
+            <p>비수술 치료</p>
+            <ul>
+                <li class="nospan">
+                    <a href="#">
+                        <img src="image/도수.png" alt="도수">
+                        <span>도수치료<br>바로가기 →</span>
+                    </a>
+                </li>
+                <li class="nospan">
+                    <a href="#">
+                        <img src="image/약침.png" alt="약침">
+                        <span>약침<br>바로가기 →</span>
+                    </a>
+                </li>
+                <li class="nospan">
+                    <a href="#">
+                        <img src="image/한약.png" alt="한약">
+                        <span>한약<br>바로가기 →</span>
+                    </a>
+                </li>
+                <li class="nospan">
+                    <a href="#">
+                        <img src="image/수기.png" alt="수기">
+                        <span>수기<br>바로가기 →</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article id="nonsec2" class="scrollevent right">
+            <h3><img src="image/check.png" alt="체크">비수술 치료 대상</h3>
+            <ul>
+                <li><span>#허리디스크</span></li>
+                <li><span>#일자목</span></li>
+                <li><span>#목 디스크</span></li>
+                <li><span>#퇴행성 무릎 관절염</span></li>
+                <li><span>#척추 협착증</span></li>
+                <li><span>#오십견</span></li>
+                <li><span>#퇴행성 디스크</span></li>
+                <li><span>#요통</span></li>
+                <li><span>#턱관절 장애</span></li>
+                <li><span>#각종 척추 관절 근골격계 질환</span></li>
+            </ul>
+        </article>
+    </section>
+<!--페이지2 end-->
+
+<!--페이지3-->
+    <section id="showOff">
+        <article class="scrollevent bottom">
+            <div>
+                <h3>남구 한의원 1등</h3>
+                <p>주월한방병원이 롯데카드가 분석한 광주남구 한의원
+                    우리동네 베스트 1위로 선정되었습니다.
+                </p>
+                <p>성원에 보답하는 주월한방병원이 되겠습니다.</p>
+            </div>
+            <img src="image/상장.png" alt="상장">
+        </article>
+    </section>
+
+    <section id="mapWrap">
+        <article id="mapInfo">
+            <!-- <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.256100430062!2d126.8955418155242!3d35.12528206786708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718bbc884b6d57%3A0xe14bc71cb31a31cf!2z7KO87JuU7ZWc67Cp67OR7JuQ!5e0!3m2!1sko!2skr!4v1669726027925!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div> -->
+            <div id="vihicle" class="scrollevent right">
+                <div id="car">
+                    <h3>자가용 이용시</h3>
+                    <p>백운로터리에서 광주대 나주방향으로 오는길, 대광여고 맞은편 빅스포 옆건물</p>
+                </div>
+                <div id="bus">
+                    <h3>버스 이용시</h3>
+                    <p>
+                        대광여고 하차<br>
+                        버스노선 : 진월07, 진월17, 진월75, 진월77, 진월78, 진월79, 진월 177<br>
+                        수완03, 송암31, 송암73, 첨단95, 마을715-1, 마을715, 화순318-1,<br>
+                        화순318, 송정90, 대촌70, 대촌170, 일곡28
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article id="information" class="scrollevent bottom">
+            <div id="time">
+                <ul>
+                    <li>진료시간 안내</li>
+                    <li>평일 9:00 - 19:30</li>
+                    <li>토요일 9:00 - 15:00</li>
+                </ul>
+            </div>
+            <div id="tel">
+                <ul>
+                    <li>Tel.1: 000 000 0000</li>
+                    <li>Tel.2: 000 000 0000</li>
+                    <li>Fax. 000 000 0000</li>
+                </ul>
+            </div>
+            <div id="location">
+                <ul>
+                    <li>광주 광역시 남구 서문대로739</li>
+                    <li>귀빈빌딩 2층~4층</li>
+                    <li>남구 주월동 빅스포 옆</li>
+                </ul>
+            </div>
+        </article>
+    </section> 
+<!--페이지3 end-->
+<!-- 메인페이지 end-->
+
+    <footer> <!--footer-->
+        <section>
+            <div id="footerlogo"><img src="image/logo2.png" alt="푸터로고"></div>
+            <article id="footerInfo">
+                <p>주소 : 광주광역시 남구 서문대로739, 귀빈빌딩 2층~4층(주월동 빅스포 옆)</p>
+                <ul>
+                    <li>사업자 등록번호 : 000 00 0000</li>
+                    <li>전화번호 : 000 000 0000</li>
+                    <li>팩스 : 000 000 0000</li>
+                    <li>대표자 : ooo</li>
+                </ul>
+                <p>Copyright&copy; 2021 All right reserved.</p>
+            </article>
+        </section>
+    </footer> <!--footer end-->
+</body>
+</html>

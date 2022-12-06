@@ -1,0 +1,184 @@
+#therapy{
+    width: 100%;
+    overflow: hidden;
+    background-color: #d4d5cb;
+}
+#therapysec1{
+    background: url(../image/men.png) no-repeat;
+    background-size: 150px 414px;
+    background-position: 0%, 50%;
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    /* border: 2px solid red; */
+}
+#comments{
+    width: 50%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translateX(-41%);
+    padding: 57px 0px;
+}
+#comments > p:nth-child(1){
+    font-size: 50px;
+    /* font-weight: bold; */
+    color: #60724c;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-family: 'Do Hyeon', sans-serif, monospace;;
+}
+#comments > p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+#comments > p:nth-child(2)::before{
+    content: "";
+    display: block;
+    clear: both;
+    border-top: 3px solid #60724c;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 350px;
+}
+#circle{
+    width: 80%;
+    float: right;
+    padding-bottom: 100px;
+}
+#circle > li{
+    float: right;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: #60724c;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+    font-size: 25px;
+    font-family: 'Do Hyeon', sans-serif, monospace;;
+    color: #e0dad8;
+    margin: 10px 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#circle > li:hover {
+    animation: jumping 0.8s linear both;
+}
+
+@keyframes jumping {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+/* pointer */
+#therapysec1 > img:nth-child(1){
+    width: 60px;
+    position: absolute;
+    top: 8px;
+    left: 45px;
+    
+    display: none;
+}
+#therapysec1 > img:nth-child(1).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(2){
+    width: 60px;
+    position: absolute;
+    top: 58px;
+    left: 45px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(2).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(3){
+    width: 60px;
+    position: absolute;
+    top: 81px;
+    left: 90px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(3).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(4){
+    width: 60px;
+    position: absolute;
+    top: 163px;
+    left: 47px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(4).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(5){
+    width: 60px;
+    position: absolute;
+    bottom: 200px;
+    left: -14px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(5).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(6){
+    width: 60px;
+    position: absolute;
+    top: 190px;
+    left: 78px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(6).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(7){
+    width: 60px;
+    position: absolute;
+    bottom: 125px;
+    left: 66px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(7).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+#therapysec1 > img:nth-child(8){
+    width: 60px;
+    position: absolute;
+    bottom: 31px;
+    left: 65px;
+
+    display: none;
+}
+#therapysec1 > img:nth-child(8).twinkle{
+    display: block;
+    animation: pointRed 1s infinite linear;
+}
+
+@keyframes pointRed {
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+}

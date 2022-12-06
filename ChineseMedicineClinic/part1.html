@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/28ff56e9f4.js" crossorigin="anonymous"></script>
+    
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/part1.css">
+    
+    <!-- 스크립트 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <title>주월한방병원::척추관절</title>
+</head>
+<body>
+<!--네비 -->
+<nav>
+    <div id="mainnav">
+        <a href="index.html">
+            <img src="image/logo.png" alt="로고이미지">
+        </a>
+
+            <ul id="mainmenu">
+                <li data-target="#hospital-introduce"><a href="#">병원소개</a></li>
+                <li data-target="#clinic"><a href="#">클리닉</a></li>
+                <li data-target="#remedial"><a href="#">재활치료</a></li>
+                <li data-target="#backbone-joint"><a href="../medical/part1.html">척추관절질환</a></li>
+                <li data-target="#herbal"><a href="#">한약치료</a></li>
+                <li data-target="#alarm"><a href="../medical/part2.html">공지사항</a></li>
+            </ul>
+            
+            <div id="subwrap">
+                <ul id="hospital-introduce" class="subwrap-contents">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">의료진 소개</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">병원 둘러보기</a></li>
+                </ul>
+                <ul id="clinic" class="subwrap-contents">
+                    <li><a href="#">만성두통</a></li>
+                    <li><a href="#">좌골신경통</a></li>
+                    <li><a href="#">교통사고 클리닉</a></li>
+                    <li><a href="#">척추교정</a></li>
+                </ul>
+                <ul id="remedial" class="subwrap-contents">
+                    <li><a href="#">각종 수술 후 재활</a></li>
+                    <li><a href="#">중풍 재활</a></li>
+                </ul>
+                <ul id="backbone-joint" class="subwrap-contents">
+                    <li><a href="#">속근육 치료</a></li>
+                    <li><a href="#">척추관절질환</a></li>
+                    <li><a href="#">도수추나치료</a></li>
+                </ul>
+                <ul id="herbal" class="subwrap-contents">
+                    <li><a href="#">미미환&탕</a></li>
+                    <li><a href="#">녹용 성장탕</a></li>
+                    <li><a href="#">총명 공진단</a></li>
+                </ul>
+                <ul id="alarm" class="subwrap-contents">
+                    <li><a href="../medical/part2.html">공지사항</a></li>
+                    <li><a href="../medical/part4.html">건의사항</a></li>
+                </ul>
+            </div>
+            
+            <form id="search2">
+                <button href="#"><img src="image/돋보기.png" alt="돋보기"></button>
+                <button href="#">온라인예약</button>
+            </form>
+        </div>
+    </nav>
+<!--네비end-->
+
+<main>
+    <div id="part1MainWrap"> <!-- main -->
+        <aside id="aside"> <!--aside-->
+            <h3>척추관절</h3>
+            <ul>
+                <li><a href="#">공지사항</a>
+                    <ul class="asidesub">
+                        <li><a href="../medical/part2.html">공지사항</a></li>
+                        <li><a href="../medical/part4.html">건의사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="../medical/part1.html">속근육치료</a>
+                    <ul class="asidesub">
+                        <li><a href="#">속근육치료란?</a></li>
+                        <li><a href="#">침,약침 치료</a></li>
+                        <li><a href="#">한약 치료</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">척추관절질환</a>
+                    <ul class="asidesub">
+                        <li><a href="#">척추관절질환이란?</a></li>
+                        <li><a href="#">침,약침 치료</a></li>
+                        <li><a href="#">한약 치료</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">도수추나치료</a>
+                    <ul class="asidesub">
+                        <li><a href="#">도수추나치료란?</a></li>
+                        <li><a href="#">침,약침 치료</a></li>
+                        <li><a href="#">한약 치료</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="asdiesub1"><a href="#">온라인<br>예약 / 상담</a></div>
+            <div id="asdiesub2"><a href="#">전화 예약 / 문의<br>000-000-0000</a></div>
+            <div id="asdiesub3">
+                <a href="#">
+                    <img src="image/location.png" alt="위치">
+                    <span>찾아오시는 길</span>
+                </a>
+            </div>
+        </aside> <!--aside end-->
+        
+        <section id="inner-therapy"><!--inner-therapy-->
+            <h2>속근육 치료란?</h2>
+            <article >
+                <div class="summary">
+                    <h3>침, 약침, 매선은 정확한 부위가 치료의 '핵심'입니다.</h3>
+                    <p>관절, 인대 가까운 속근육의 긴장을 풀면 의외로 오래된 통증이 쉽게 해결되기도 합니다</p>
+                    <ul>
+                        <li>'속'근육 침치료, 1cm 차이가 치료 결과를 바꿉니다.</li>
+                        <li>약침치료, 노화된 근육을 '순환'시켜줍니다.</li>
+                        <li>매선치료, 노화근육에 힘을 주고 침 치료효과를 지속 시킵니다.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="contents">
+                <div class="sub1">
+                    <h3>속근육이란?</h3>
+                    <article>
+                        <img src="image/속근육1.png" alt="자세">
+                        <div class="pwrap">
+                            <p>겉근육은 겉에서 보이는 근육입니다. 식스팩 알통 등 힘을 주면 튀어나오는 근육들로 몸의 움직임을 만들어내고
+                                외부로부터 몸을 보호합니다. 반면, 속근육은 몸 안 깊은 곳에서 척추와 관절 뼈를 븥들고 자세를 유지시키는
+                                근육들입니다.
+                            </p>
+                            <p>
+                                사람이 똑바로 서 있을 수 있는 이유는 뼈때문이라고 생각하지만 그렇지 않습니다.
+                                뼈가 제자리에 있으려면 속근육이 단단히 지지해 주어야 합니다. 바른 자세를 유지하고 싶어도
+                                속근육이 약하면 구부정해지고 짝다리를 집게되며, 결국 체형까지 삐둘어집니다.
+                                건강한 속근육이 단단하게 뼈와 관절을 지탱해 줍니다.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="sub2">
+                    <h3>속근육이 무너지면?</h3>
+                    <article>
+                        <div class="imgWrap">
+                            <img src="image/정상.png" alt="속근육정상">
+                            <img src="image/비정상.png" alt="속근육비정상">
+                        </div>
+                        <div class="pwrap2">
+                            <p>속 근육의 균형이 깨지게되면 관절이나 뼈를 제대로 지지하지 못합니다.
+                                여기저기 쑤시고 아픈 통증 모두 속근육이 무너졌기 때문입니다.
+                                무릎, 어깨, 관절 질환들도 연관된 속근육들의 뭉침과 불균형이 인대와 관절에 무리를
+                                일으켜서 일어납니다. 근육이 약해지면 근육이 지지하는 척추와 관절에 과부하가 오게됩니다.
+                            </p>
+                            <p>
+                                속 근육을 풀기위해서는 긴장되고 짧아진 근육을 먼저 찾아내 그곳을 풀고 틀어진 자세를
+                                원위치시켜야 합니다.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section> <!--inner-therapy end-->
+
+
+        <div id="fixed"><!--fixed-->
+            <h2>바로가기</h2>
+            <ul class="quickMenu"> <!--.show-->
+                <li><a href="#">척추치료</a></li>
+                <li><a href="#">목/턱치료</a></li>
+                <li><a href="#">어깨치료</a></li>
+                <li><a href="#">무릎치료</a></li>
+                <li><a href="#">교통사고<br>휴유증</a></li>
+                <li><a href="#">도수/추나</a></li>
+                <li><a href="#">약침치료</a></li>
+                <li><a href="#">한약치료</a></li>
+            </ul>
+        </div><!--fixed end-->
+    </div>
+</main> <!-- main end -->
+
+    <footer> <!--footer-->
+        <section>
+            <div id="footerlogo"><img src="image/logo2.png" alt="푸터로고"></div>
+            <article id="footerInfo">
+                <p>주소 : 광주광역시 남구 서문대로739, 귀빈빌딩 2층~4층(주월동 빅스포 옆)</p>
+                <ul>
+                    <li>사업자 등록번호 : 000 00 0000</li>
+                    <li>전화번호 : 000 000 0000</li>
+                    <li>팩스 : 000 000 0000</li>
+                    <li>대표자 : ooo</li>
+                </ul>
+                <p>Copyright&copy; 2021 All right reserved.</p>
+            </article>
+        </section>
+    </footer> <!--footer end-->
+</body>
+</html>

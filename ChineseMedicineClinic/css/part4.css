@@ -1,0 +1,629 @@
+/* 갈색 #654339  초록색 #5f724c 검정 #0a0c19 흰색#faf9f1*/
+/* a28e88 - 연갈 856961 - 진갈  e0dad8 - 흰색과 가까운 연갈 d4d5cb - 연초  60724c - 녹색*/
+
+/* font-family: 'Do Hyeon', sans-serif, monospace; 강조 */
+/* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
+
+html, body{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif, monospace;
+    color: #0a0c19;
+    background-color: #faf9f1;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #0a0c19;
+    font-family: 'Nanum Gothic', sans-serif, monospace;
+}
+img{
+    display:  block;
+}
+button{
+    cursor: pointer;
+}
+
+nav{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* main nav */
+#mainnav{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    position: relative;
+}
+#mainnav::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#mainnav > a{
+    float: left;
+}
+#mainnav > a > img{
+    height: 60px;
+}
+#mainmenu{
+    float: left;
+    padding: 0 70px;
+}
+#mainmenu > li{
+    float: left;
+    width: 110px;
+    text-align: center;
+}
+#mainmenu > li > a{
+    padding: 20.5px 0;
+    line-height: 60px;
+}
+#search2{
+  float: right;
+}
+#search2 > button{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+#search2 > button:first-child{
+    display: block;
+    float: left;
+    padding: 19.5px 21px;
+}
+#search2 > button:nth-child(2){
+    float: left;
+    display: block;
+    padding: 21.5px 15px;
+    background-color: #60724c;
+    color: #e0dad8;
+}
+
+/* nav */
+#subwrap{
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    z-index: 999;
+}
+
+#hospital-introduce{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a28e88;
+    padding: 0 252px; /*150*/
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+    
+    display: none;
+}
+#hospital-introduce::before{
+    content: "병원소개";
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    padding-left: 20px;
+    color: #e0dad8;
+    font-weight: bold;
+}
+#hospital-introduce > li{
+    float: left;
+}
+#hospital-introduce > li > a{
+    display: block;
+    padding: 15px 30px;
+}
+#hospital-introduce::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#hospital-introduce.on{
+    display: block;
+}
+
+/* clinic */
+#clinic{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a28e88;
+    padding: 0 252px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+    
+    display: none;
+}
+#clinic::before{
+    content: "클리닉";
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    padding-left: 20px;
+    color: #e0dad8;
+    font-weight: bold;
+}
+#clinic > li{
+    float: left;
+}
+#clinic > li > a{
+    display: block;
+    padding: 15px 30px;
+}
+#clinic::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#clinic.on{
+    display: block;
+}
+
+/* remedial */
+#remedial{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a28e88;
+    padding: 0 252px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+
+    display: none;
+}
+#remedial::before{
+    content: "재활치료";
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    padding-left: 20px;
+    color: #e0dad8;
+    font-weight: bold;
+}
+#remedial > li{
+    float: left;
+}
+#remedial > li > a{
+    display: block;
+    padding: 15px 30px;
+}
+#remedial::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#remedial.on{
+    display: block;
+}
+
+/* backbone-joint */
+#backbone-joint{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a28e88;
+    padding: 0 252px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+
+    display: none;
+}
+#backbone-joint::before{
+    content: "척추관절질환";
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    padding-left: 20px;
+    color: #e0dad8;
+    font-weight: bold;
+}
+#backbone-joint > li{
+    float: left;
+}
+#backbone-joint > li > a{
+    display: block;
+    padding: 15px 30px;
+}
+#backbone-joint::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#backbone-joint.on{
+    display: block;
+}
+
+/* herbal */
+#herbal{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a28e88;
+    padding: 0 252px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+
+    display: none;
+}
+#herbal::before{
+    content: "한약치료";
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    padding-left: 20px;
+    color: #e0dad8;
+    font-weight: bold;
+}
+#herbal > li{
+    float: left;
+}
+#herbal > li > a{
+    display: block;
+    padding: 15px 30px;
+}
+#herbal::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#herbal.on{
+    display: block;
+}
+
+/* alarm */
+#alarm{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a28e88;
+    padding: 0 252px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+
+    display: none;
+}
+#alarm::before{
+    content: "공지사항";
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    padding-left: 20px;
+    color: #e0dad8;
+    font-weight: bold;
+}
+#alarm > li{
+    float: left;
+}
+#alarm > li > a{
+    display: block;
+    padding: 15px 30px;
+}
+#alarm::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#alarm.on{
+    display: block;
+}
+
+/* 호버시 */
+#subwrap > ul > li:hover > a{
+    color: #e0dad8;
+    transition: 200ms;
+}
+#mainmenu > li:hover {
+    background-color: #a28e88;
+    transition: 400ms;
+}
+
+/* part1MainWrap */
+main::before{
+    content: "";
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #654339;
+    margin-bottom: 5px;
+}
+#part4MainWrap{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#aside{
+    width: 15%;
+    float: left;
+
+    /* background-color: rgb(196, 150, 196); */
+}
+#aside > ul{
+    width: 100%;
+    position: relative;
+}
+#aside > ul > li{
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+}
+#aside > h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #654339;
+    padding: 17px 0px;
+    text-align: center;
+
+    background-color: #faf9f1;
+}
+#aside > ul > li:not(:last-child){
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid #654339;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+#aside > ul > li:last-child{
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 2px solid #654339;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+}
+#aside > ul > li:first-child{
+    border-top: 4px solid #654339;
+}
+#aside > ul > li> a{
+    display: block;
+    font-size: 16px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.asidesub{
+    width: 100%;
+    border-top: 1px solid #654339;
+    background-color: #e0dad8;
+
+    display: none;
+}
+.asidesub >li:hover > a{
+    color: #faf9f1;
+    background-color: #654339;
+}
+.asidesub > li > a{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px 15px;
+}
+#asdiesub1{
+    width: 100%;
+    text-align: center;
+}
+#asdiesub1 > a{
+    padding: 12px 0;
+    display: block;
+    background-color: #60724c;
+    color: #e0dad8;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 90%;
+    margin: 14px auto;
+}
+#asdiesub2{
+    width: 100%;
+    text-align: center;
+}
+#asdiesub2 > a{
+    padding: 12px 0;
+    display: block;
+    background-color: #60724c;
+    color: #e0dad8;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 90%;
+    margin: 14px auto;
+}
+#asdiesub3{
+    width: 100%;
+    text-align: center;
+}
+#asdiesub3 > a{
+    display: block;
+    border: 3px solid #60724c;
+    background-color:transparent;
+    color: #60724c;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    width: 90%;
+    margin: 14px auto;
+    padding: 66px 20px;
+    box-sizing: border-box;
+}
+#asdiesub3 > a > img{
+    margin: 0 auto;
+}
+#asdiesub3 > a > span{
+    display: block;
+}
+
+/* p4sec2 */
+#p4Sec2{
+    width: 83%;
+    float: left;
+    margin: 0 12px;
+
+    /* background-color: rgb(255, 145, 167); */
+}
+#p4Sec2 > h2{
+    font-size: 25px;
+    font-weight: bold;
+    /* color: #60724c; */
+    padding: 17px 0;
+}
+#p4Sec2 > article{
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 2px solid #654339;
+}
+#suggestions{
+    padding: 15px 0;
+
+    /* background-color: rgb(132, 174, 252); */
+}
+#suggestions > p{
+    display: block;
+    font-weight: bold;
+}
+#suggestions > p:nth-child(2){
+    padding: 12px 0;
+    font-size: 20px;
+}
+#p4Sec2 > article > table{
+    width: 100%;
+    border-top: 2px solid #a28e88;
+    border-bottom: 2px solid #a28e88;
+}
+.tabletr{
+    border-bottom: 1px solid #a28e88;
+}
+.tabletr > th {
+    background-color: #d4d5cb;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.tabletr > td{
+    padding: 10px 0;
+}
+.tabletr > td > input{
+    padding: 5px;
+    margin-left: 20px;
+}
+#pwalarm span{    
+    margin-left: 10px;
+    font-size: 14px;
+}
+.tabletr span{
+    color: rgb(139, 23, 23);
+}
+.tarea textarea{
+    width: 95%;
+    height: 100px;
+    text-align: center;
+    resize: none;
+}
+#personal-information{
+    padding: 17px 10px;
+    border: 1px solid #a28e88;
+    margin: 17px 10px;
+
+    /* background-color: rgb(248, 248, 156); */
+}
+#personal-information > li{
+    font-size: 14px;
+}
+#personal-information > li:not(:last-child){
+    margin-bottom: 10px;
+}
+#personal-information-check{
+    padding-bottom: 17px;
+}
+#personal-information-check > li{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#personal-information-check > ul >li{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+#personal-information-check > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+#checkButton{
+    text-align: center;
+    padding-bottom: 17px;
+}
+#checkButton > input{
+    border: none;
+    background-color: #654339;
+    color: #faf9f1;
+    border-radius: 20px;
+    padding: 3px 30px;
+}
+
+/* fixed */
+#fixed{
+    width: 70px;
+    float: left;
+    font-size: 14px;
+    position: fixed;
+    right: 180px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    
+    background-color: darkgoldenrod;
+}
+#fixed > h2{
+    width: 100%;
+    display: block;
+    background-color: #60724c;
+    color: #faf9f1;
+    box-sizing: border-box;
+    border-bottom: 2px solid #faf9f1;
+    padding: 17px 0px;
+    text-align: center;
+}
+.quickMenu{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #d4d5cb;
+    font-weight: bold;
+    color: #0a0c19;
+    line-height: 20px;
+}
+.quickMenu.show{
+    display: block;
+}
+.quickMenu > li{
+    text-align: center;
+    border-bottom: 1px solid #faf9f1;
+}
+.quickMenu > li > a{
+    display: block;
+    padding: 30px 0px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #e0dad8 ;
+    overflow: hidden;
+}
+footer > section{
+    width: 1200px;
+    margin: 10px auto;
+}
+#footerlogo{
+    float: left;
+}
+#footerlogo > img{
+    height: 50px;
+    padding: 50px ;
+}
+#footerInfo{
+    float: left;
+    line-height: 25px;
+    padding: 35px ;
+}
+#footerInfo > p{
+    display: block;
+}
+#footerInfo > ul > li{
+    display: inline-block;
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 2px solid #555 ;
+}
+#footerInfo > ul > li:last-child{
+    border: none;
+}
