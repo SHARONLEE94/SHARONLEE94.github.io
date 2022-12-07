@@ -76,14 +76,9 @@ $(function() {
             nextPageIndex = 5;
         } else if($navList.index(this) == 3){
             nextPageIndex = 9;
-        } 
-        
-        if(nextPageIndex == 9) {
-            $("#contact").addClass("conrot");
         }
-
-        // console.log("nextpageIndex");
-        // console.log(nextPageIndex);
+        console.log("nextpageIndex");
+        console.log(nextPageIndex);
         // nextPageIndex = $navList.index(this);
         
         turnPage();
@@ -212,11 +207,6 @@ $(function() {
                         transitionDuration: duration4
                     });
             }
-            // 회전
-            if(nextPageIndex == 9) {
-                // console.log("yes!!!!!!!");
-                $("#contact").addClass("conrot");
-            }
   
             
         } else if(event.deltaY < 0) {
@@ -331,10 +321,6 @@ $(function() {
                         transitionDuration: duration4
                     });
             }
-            // 회전
-            if(nextPageIndex == 9) {
-                $("#contact").addClass("conrot");
-            }
 
 
         }
@@ -347,249 +333,118 @@ $(function() {
     // -----------------------------------------------------------------
     // keydown 이벤트
     $body.on("keydown", function(event) {
-
-        var duration1 = "500ms";
-        var duration2 = "1000ms";
-        var duration3 = "4000ms";
-        var duration4 = "4500ms";
-
         if(isAnimated) return;
 
         if(event.which == 40 || event.which == 34) {
             if(thisPageIndex >= lastPageIndex) return;
             
             nextPageIndex = thisPageIndex+1;
-
-            // navBar
-            if(nextPageIndex == 0 || nextPageIndex == 9){
-                $header.css("display", "none");
-            }else{
-                $header.css("display", "block");
-            }
-
-            // animation
-            if(nextPageIndex == 1){
-                $("#helloLetter")
-                    .animate({
-                        opacity : 1,
-                        right:0,
-                        transitionDuration: duration1
-                    });
-            }
-            else if(nextPageIndex == 2){
-                $("#strength")
-                    .animate({
-                        opacity :1,
-                        left: 0,
-                        transitionDuration: duration2
-                    });
-                $("#weaknesses")
-                    .animate({
-                        opacity : 1,
-                        right:0,
-                        transitionDuration: duration2
-                    });
-            }
-            else if(nextPageIndex == 3){
-                $("#opportunities")
-                    .animate({
-                        opacity :1,
-                        top: 0,
-                        transitionDuration: duration2
-                    });
-                $("#threats")
-                    .animate({
-                        opacity : 1,
-                        bottom:0,
-                        transitionDuration: duration2
-                    });
-            }else if(nextPageIndex == 4){
-                // bettery fill
-                $(".fill > .betterywave1")
-                    .animate({
-                        left:"-48%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave3")
-                    .animate({
-                        left:"-47%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave4")
-                    .animate({
-                        left:"-49%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave6")
-                    .animate({
-                        left:"-48%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave7")
-                    .animate({
-                        left:"-59%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave9")
-                    .animate({
-                        left:"-60%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave10")
-                    .animate({
-                        left:"-51%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave12")
-                    .animate({
-                        left:"-52%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave13")
-                    .animate({
-                        left:"-44%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave15")
-                    .animate({
-                        left:"-45%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave16")
-                    .animate({
-                        left:"-46%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave18")
-                    .animate({
-                        left:"-44%",
-                        transitionDuration: duration4
-                    });    
-            }
-
-            // 회전
-            if(nextPageIndex == 9) {
-                $("#contact").addClass("conrot");
-            }
-
         }else if(event.which == 38 || event.which ==33) {
             if(thisPageIndex <= 0) return;
             
             nextPageIndex = thisPageIndex-1;
-
-            // navBar
-            if(nextPageIndex == 0 || nextPageIndex == 9){
-                $header.css("display", "none");
-            }else{
-                $header.css("display", "block");
-            }
-
-            // animation
-            if(nextPageIndex == 1){
-                $("#helloLetter")
-                    .animate({
-                        opacity : 1,
-                        right:0,
-                        transitionDuration: duration1
-                    });
-            }
-            else if(nextPageIndex == 2){
-                $("#strength")
-                    .animate({
-                        opacity :1,
-                        left: 0,
-                        transitionDuration: duration2
-                    });
-                $("#weaknesses")
-                    .animate({
-                        opacity : 1,
-                        right:0,
-                        transitionDuration: duration2
-                    });
-            }
-            else if(nextPageIndex == 3){
-                $("#opportunities")
-                    .animate({
-                        opacity :1,
-                        top: 0,
-                        transitionDuration: duration2
-                    });
-                $("#threats")
-                    .animate({
-                        opacity : 1,
-                        bottom:0,
-                        transitionDuration: duration2
-                    });
-            }else if(nextPageIndex == 4){
-                // bettery fill
-                $(".fill > .betterywave1")
-                    .animate({
-                        left:"-48%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave3")
-                    .animate({
-                        left:"-47%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave4")
-                    .animate({
-                        left:"-49%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave6")
-                    .animate({
-                        left:"-48%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave7")
-                    .animate({
-                        left:"-59%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave9")
-                    .animate({
-                        left:"-60%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave10")
-                    .animate({
-                        left:"-51%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave12")
-                    .animate({
-                        left:"-52%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave13")
-                    .animate({
-                        left:"-44%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave15")
-                    .animate({
-                        left:"-45%",
-                        transitionDuration: duration4
-                    });
-                $(".fill > .betterywave16")
-                    .animate({
-                        left:"-46%",
-                        transitionDuration: duration3
-                    });
-                $(".fill > .betterywave18")
-                    .animate({
-                        left:"-44%",
-                        transitionDuration: duration4
-                    });
-            }
-            // 회전
-            if(nextPageIndex == 9) {
-                $("#contact").addClass("conrot");
-            }
-
         }
         
+        // animation
+        if(nextPageIndex == 1){
+            $("#helloLetter")
+                .animate({
+                    opacity : 1,
+                    right: 0,
+                    transitionDuration: duration1
+                });
+        }
+        else if(nextPageIndex == 2){
+            $("#strength")
+                .animate({
+                    opacity :1,
+                    left: 0,
+                    transitionDuration: duration2
+                });
+            $("#weaknesses")
+                .animate({
+                    opacity : 1,
+                    right:0,
+                    transitionDuration: duration2
+                });
+        }
+        else if(nextPageIndex == 3){
+            $("#opportunities")
+                .animate({
+                    opacity :1,
+                    top: 0,
+                    transitionDuration: duration2
+                });
+            $("#threats")
+                .animate({
+                    opacity : 1,
+                    bottom:0,
+                    transitionDuration: duration2
+                });
+        }else if(nextPageIndex == 4){
+            // bettery fill
+            $(".fill > .betterywave1")
+                .animate({
+                    left:"-48%",
+                    transitionDuration: duration3
+                });
+            $(".fill > .betterywave3")
+                .animate({
+                    left:"-47%",
+                    transitionDuration: duration4
+                });
+            $(".fill > .betterywave4")
+                .animate({
+                    left:"-49%",
+                    transitionDuration: duration3
+                });
+            $(".fill > .betterywave6")
+                .animate({
+                    left:"-48%",
+                    transitionDuration: duration4
+                });
+            $(".fill > .betterywave7")
+                .animate({
+                    left:"-59%",
+                    transitionDuration: duration3
+                });
+            $(".fill > .betterywave9")
+                .animate({
+                    left:"-60%",
+                    transitionDuration: duration4
+                });
+            $(".fill > .betterywave10")
+                .animate({
+                    left:"-51%",
+                    transitionDuration: duration3
+                });
+            $(".fill > .betterywave12")
+                .animate({
+                    left:"-52%",
+                    transitionDuration: duration4
+                });
+            $(".fill > .betterywave13")
+                .animate({
+                    left:"-44%",
+                    transitionDuration: duration3
+                });
+            $(".fill > .betterywave15")
+                .animate({
+                    left:"-45%",
+                    transitionDuration: duration4
+                });
+            $(".fill > .betterywave16")
+                .animate({
+                    left:"-46%",
+                    transitionDuration: duration3
+                });
+            $(".fill > .betterywave18")
+                .animate({
+                    left:"-44%",
+                    transitionDuration: duration4
+                });
+
+        }
         
         turnPage();
     });
@@ -652,9 +507,9 @@ $(function() {
 
     // -----------------------------------------------------------------
     // 새창열기
-    var $page7Open = $("#page7 > .conbg > p > a");
-    var $page9Open = $("#page9 > .conbg > p > a");
-    var $page11Open = $("#page11 > .conbg > p > a");
+    var $page7Open = $("#page7 > p > a");
+    var $page9Open = $("#page9 > p > a");
+    var $page11Open = $("#page11 > p > a");
     
     $page7Open.on("click", openPage);
     $page9Open.on("click", openPage);

@@ -16,10 +16,11 @@
     <!-- 스타일 시트 -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/part1.css">
+    <!-- <link rel="stylesheet" href="css/mobilep1-2.css"> -->
     
     <!-- 스크립트 -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/part.js"></script>
 
     <title>주월한방병원::척추관절</title>
 </head>
@@ -35,9 +36,9 @@
                 <li data-target="#hospital-introduce"><a href="#">병원소개</a></li>
                 <li data-target="#clinic"><a href="#">클리닉</a></li>
                 <li data-target="#remedial"><a href="#">재활치료</a></li>
-                <li data-target="#backbone-joint"><a href="../medical/part1.html">척추관절질환</a></li>
+                <li data-target="#backbone-joint"><a href="part1.html">척추관절질환</a></li>
                 <li data-target="#herbal"><a href="#">한약치료</a></li>
-                <li data-target="#alarm"><a href="../medical/part2.html">공지사항</a></li>
+                <li data-target="#alarm"><a href="part2.html">공지사항</a></li>
             </ul>
             
             <div id="subwrap">
@@ -58,9 +59,9 @@
                     <li><a href="#">중풍 재활</a></li>
                 </ul>
                 <ul id="backbone-joint" class="subwrap-contents">
-                    <li><a href="#">속근육 치료</a></li>
-                    <li><a href="#">척추관절질환</a></li>
-                    <li><a href="#">도수추나치료</a></li>
+                    <li><a href="part1.html">속근육 치료</a></li>
+                    <li><a href="part1.html">척추관절질환</a></li>
+                    <li><a href="part1.html">도수추나치료</a></li>
                 </ul>
                 <ul id="herbal" class="subwrap-contents">
                     <li><a href="#">미미환&탕</a></li>
@@ -68,8 +69,8 @@
                     <li><a href="#">총명 공진단</a></li>
                 </ul>
                 <ul id="alarm" class="subwrap-contents">
-                    <li><a href="../medical/part2.html">공지사항</a></li>
-                    <li><a href="../medical/part4.html">건의사항</a></li>
+                    <li><a href="part2.html">공지사항</a></li>
+                    <li><a href="part4.html">건의사항</a></li>
                 </ul>
             </div>
             
@@ -88,13 +89,13 @@
             <ul>
                 <li><a href="#">공지사항</a>
                     <ul class="asidesub">
-                        <li><a href="../medical/part2.html">공지사항</a></li>
-                        <li><a href="../medical/part4.html">건의사항</a></li>
+                        <li><a href="part2.html">공지사항</a></li>
+                        <li><a href="part4.html">건의사항</a></li>
                     </ul>
                 </li>
-                <li><a href="../medical/part1.html">속근육치료</a>
+                <li><a href="part1.html">속근육치료</a>
                     <ul class="asidesub">
-                        <li><a href="#">속근육치료란?</a></li>
+                        <li><a href="part1.html">속근육치료란?</a></li>
                         <li><a href="#">침,약침 치료</a></li>
                         <li><a href="#">한약 치료</a></li>
                     </ul>
@@ -118,7 +119,7 @@
             <div id="asdiesub2"><a href="#">전화 예약 / 문의<br>000-000-0000</a></div>
             <div id="asdiesub3">
                 <a href="#">
-                    <img src="image/location.png" alt="위치">
+                    <img src="image/location.png" alt="location">
                     <span>찾아오시는 길</span>
                 </a>
             </div>
@@ -142,7 +143,7 @@
                 <div class="sub1">
                     <h3>속근육이란?</h3>
                     <article>
-                        <img src="image/속근육1.png" alt="자세">
+                        <img src="image/속근육1.png" alt="position">
                         <div class="pwrap">
                             <p>겉근육은 겉에서 보이는 근육입니다. 식스팩 알통 등 힘을 주면 튀어나오는 근육들로 몸의 움직임을 만들어내고
                                 외부로부터 몸을 보호합니다. 반면, 속근육은 몸 안 깊은 곳에서 척추와 관절 뼈를 븥들고 자세를 유지시키는
@@ -179,27 +180,30 @@
                 </div>
             </article>
         </section> <!--inner-therapy end-->
+        <!--fixed-->
+        <div id="fixBoxWrap">
+            <div id="fixed">
+                <h2>바로가기</h2>
+                <ul class="quickMenu"> <!--.show-->
+                    <li><a href="#">척추치료</a></li>
+                    <li><a href="#">목/턱치료</a></li>
+                    <li><a href="#">어깨치료</a></li>
+                    <li><a href="#">무릎치료</a></li>
+                    <li><a href="#">교통사고<br>휴유증</a></li>
+                    <li><a href="#">도수/추나</a></li>
+                    <li><a href="#">약침치료</a></li>
+                    <li><a href="#">한약치료</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--fixed end-->
 
-
-        <div id="fixed"><!--fixed-->
-            <h2>바로가기</h2>
-            <ul class="quickMenu"> <!--.show-->
-                <li><a href="#">척추치료</a></li>
-                <li><a href="#">목/턱치료</a></li>
-                <li><a href="#">어깨치료</a></li>
-                <li><a href="#">무릎치료</a></li>
-                <li><a href="#">교통사고<br>휴유증</a></li>
-                <li><a href="#">도수/추나</a></li>
-                <li><a href="#">약침치료</a></li>
-                <li><a href="#">한약치료</a></li>
-            </ul>
-        </div><!--fixed end-->
     </div>
 </main> <!-- main end -->
 
     <footer> <!--footer-->
         <section>
-            <div id="footerlogo"><img src="image/logo2.png" alt="푸터로고"></div>
+            <div id="footerlogo"><img src="image/logo2.png" alt="footerlogo"></div>
             <article id="footerInfo">
                 <p>주소 : 광주광역시 남구 서문대로739, 귀빈빌딩 2층~4층(주월동 빅스포 옆)</p>
                 <ul>

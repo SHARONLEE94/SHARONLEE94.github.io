@@ -1,8 +1,26 @@
 $(function() {
 
     // 1.네비
-    // ㄱ. 특정 높이에서 사라지는 부분
-    // ㄴ. 특정 높이에서 바뀌는 부분
+    var $mainNav=$("#nav");
+    var navOffsetTop=$mainNav.offset().top;
+    var $con=$("#all-con");
+    var $introNav=$("#intronav");
+    var mainnavHeight = $mainNav.height() + $introNav.height();
+
+    $(window).on("scroll",function() {
+        var navScrollTop=$(window).scrollTop();
+
+        if(navOffsetTop < navScrollTop){
+            $mainNav.addClass("fixed");
+            $introNav.addClass("fix");
+            $con.css("marginTop", mainnavHeight);
+        } else{
+            $mainNav.removeClass("fixed");
+            $introNav.removeClass("fix");
+            $con.removeAttr("style");
+        }
+    });
+
     
     // 2. sub 네비----------------------------------------------------
     var $mainMenu = $("#mainmenu > li");
@@ -57,6 +75,7 @@ $(function() {
     var $slideBullet = $("<div></div>")
                         .attr("id","slide-bullet")
                         .appendTo($slideWrap);
+                        
     $slide.children().each(function() {
         $("<button></button>").appendTo($slideBullet);
     });
@@ -71,6 +90,7 @@ $(function() {
 
         // ㄷ-ⓑ. bullet기능 추가
         photoIndex++;
+
         if(photoIndex == $slideBulletList.length) photoIndex = 0;
         $slideBulletList.removeClass("on")
                     .eq(photoIndex).addClass("on");
@@ -104,7 +124,7 @@ $(function() {
             $slide
                 .children(":gt("+(move-1)+")").prependTo($slide)
                 .end()
-                .css({left:move+100 + "%"}).animate({left:0}, duration);
+                .css({left:move+ 100 + "%"}).animate({left:0}, duration);
         }
     }); 
 
@@ -141,45 +161,74 @@ $(function() {
 
 
     // 스크롤 시 이미지 나타내기---------------------------------------------------------------
-    var $scrollEvent = $(".scrollevent");
-    var scrollEventOffsetTop = [];
-    var dist = 100;
+    var $scrollEvent = $(".scrollEvent");
     var $window = $(window);
-
-    $scrollEvent.each(function(index,elememt){
-        var $this = $(this);
-        var offsetTop = $this.offset().top + $this.height();
-
-        scrollEventOffsetTop.push(offsetTop);
-
-        hideImage($this);
-
-    });
-
+    var Index = 0;
+    
+    
     $window.on("scroll", function() {
         var scrollTop = $window.scrollTop() + $window.height();
 
-        scrollEventOffsetTop.forEach(function(offsetTop, index){
-            if(offsetTop <= scrollTop) {
-                $scrollEvent.eq(index).removeAttr("style");
-            } else{
-                hideImage($scrollEvent.eq(index));
+        $scrollEvent.each(function(){
+            var $this = $(this);
+            var offsetTop = $this.offset().top + $this.height();
+
+            if(scrollTop >= offsetTop) {
+                if($scrollEvent.hasClass("0")){
+                    $this.addClass("showcom");
+                }
+                if($scrollEvent.hasClass("1")){
+                    $this.addClass("showcir");
+                }
+                if($scrollEvent.hasClass("2")){
+                    $this.addClass("showThera");
+                }
+                if($scrollEvent.hasClass("3")){
+                    $this.addClass("showNon1");
+                }
+                if($scrollEvent.hasClass("4")){
+                    $this.addClass("showNon2");
+                }
+                if($scrollEvent.hasClass("5")){
+                    $this.addClass("showArti");
+                }
+                if($scrollEvent.hasClass("6")){
+                    $this.addClass("showVihi");
+                }
+                if($scrollEvent.hasClass("7")){
+                    $this.addClass("showInfo");
+                }
+
+            }else if(scrollTop < offsetTop){
+
+                if($scrollEvent.hasClass("0")){
+                    $this.removeClass("showcom");
+                }
+                if($scrollEvent.hasClass("1")){
+                    $this.removeClass("showcir");
+                }
+                if($scrollEvent.hasClass("2")){
+                    $this.removeClass("showThera");
+                }
+                if($scrollEvent.hasClass("3")){
+                    $this.removeClass("showNon1");
+                }
+                if($scrollEvent.hasClass("4")){
+                    $this.removeClass("showNon2");
+                }
+                if($scrollEvent.hasClass("5")){
+                    $this.removeClass("showArti");
+                }
+                if($scrollEvent.hasClass("6")){
+                    $this.removeClass("showVihi");
+                }
+                if($scrollEvent.hasClass("7")){
+                    $this.removeClass("showInfo");
+                }
+
             }
         });
-    });
-
-    function hideImage() {
-        $scrollEvent.css("opacity", 0);
-        if($scrollEvent.hasClass("top")){
-            $scrollEvent.css("transform", "translateY(-" + dist + "px)");
-        }else if($scrollEvent.hasClass("bottom")){
-            $scrollEvent.css("transform", "translateY(" + dist + "px)");
-        }else if($scrollEvent.hasClass("left")){
-            $scrollEvent.css("transform", "translateX(-" + dist + "px)");
-        }else if($scrollEvent.hasClass("right")){
-            $scrollEvent.css("transform", "translateX(" + dist + "px)");
-        }
-    }
+    });;
 
 
     // 모달창
@@ -197,17 +246,7 @@ $(function() {
     });
 
     // page2-----------------------------------------------------------------------------------
-    // var $localNav=$("#local-nav > li");
 
-    // $localNav.on("click", function() {
-
-    //     $(this).addClass("localOn")
-    //             .siblings(".localOn").removeClass("localOn");
-
-    // });
-
-    // ----------------------------------------------------------------------------------------
-    
 
 
 

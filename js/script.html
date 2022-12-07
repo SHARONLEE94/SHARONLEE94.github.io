@@ -76,14 +76,9 @@ $(function() {
             nextPageIndex = 5;
         } else if($navList.index(this) == 3){
             nextPageIndex = 9;
-        } 
-        
-        if(nextPageIndex == 9) {
-            $("#contact").addClass("conrot");
         }
-
-        // console.log("nextpageIndex");
-        // console.log(nextPageIndex);
+        console.log("nextpageIndex");
+        console.log(nextPageIndex);
         // nextPageIndex = $navList.index(this);
         
         turnPage();
@@ -212,11 +207,6 @@ $(function() {
                         transitionDuration: duration4
                     });
             }
-            // 회전
-            if(nextPageIndex == 9) {
-                // console.log("yes!!!!!!!");
-                $("#contact").addClass("conrot");
-            }
   
             
         } else if(event.deltaY < 0) {
@@ -330,10 +320,6 @@ $(function() {
                         left:"-44%",
                         transitionDuration: duration4
                     });
-            }
-            // 회전
-            if(nextPageIndex == 9) {
-                $("#contact").addClass("conrot");
             }
 
 
@@ -464,12 +450,7 @@ $(function() {
                     .animate({
                         left:"-44%",
                         transitionDuration: duration4
-                    });    
-            }
-
-            // 회전
-            if(nextPageIndex == 9) {
-                $("#contact").addClass("conrot");
+                    });
             }
 
         }else if(event.which == 38 || event.which ==33) {
@@ -583,10 +564,6 @@ $(function() {
                         transitionDuration: duration4
                     });
             }
-            // 회전
-            if(nextPageIndex == 9) {
-                $("#contact").addClass("conrot");
-            }
 
         }
         
@@ -652,9 +629,9 @@ $(function() {
 
     // -----------------------------------------------------------------
     // 새창열기
-    var $page7Open = $("#page7 > .conbg > p > a");
-    var $page9Open = $("#page9 > .conbg > p > a");
-    var $page11Open = $("#page11 > .conbg > p > a");
+    var $page7Open = $("#page7 > p > a");
+    var $page9Open = $("#page9 > p > a");
+    var $page11Open = $("#page11 > p > a");
     
     $page7Open.on("click", openPage);
     $page9Open.on("click", openPage);

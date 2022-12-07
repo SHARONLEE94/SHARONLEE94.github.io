@@ -32,6 +32,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 100;
     }
     #opening{
         background: url(../images/p1_bg_main.png) no-repeat top / cover;
@@ -141,7 +142,6 @@
         box-shadow: 0 0 15px #333;
         position: fixed;
         top: 0; left: 0; bottom:0;
-        display: none;
         
         z-index: 999;
     }
@@ -164,16 +164,16 @@
     }
     .navlist{
         width: 100%;
-        height: 35%;
+        height: 30%;
     
         position:absolute;
-        bottom:30%;
+        bottom:35%;
         
         /* background-color: cornflowerblue; */
     }
     .navlist > li {
         width: 100%;
-        height: 25%;
+        height: 33.33%;
     }
     .navlist a{
         display: inline-block;
@@ -195,11 +195,6 @@
         position: absolute;
         bottom: 0;
     }
-    .navlist > li:hover {
-        font-size: 35px;
-        font-weight: bold;
-        transition: 0.2s linear;
-    }
     
     /* 공통 */
     .pinkbg{
@@ -214,16 +209,27 @@
         
         /* background-color: cornflowerblue; */
     }
-
-    /* page2 */
-    #page2{
-        width: 100%;
+    /* about_wrap */
+    #w_align{
+        width: 300%;
         height: 100%;
         position: absolute;
-        top: 100%;
-        left: 100%;
-
-        z-index: 50;
+        top: 0;
+        left: 0;
+    }
+    #w_align::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    /* page2 */
+    #page2{
+        width: 33.33%;
+        height: 100%;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
 
     }
     #hello{
@@ -238,15 +244,14 @@
         position: absolute;
         bottom: 5px;
         right: 0;
-        
+    
         /* background-color: rgb(255, 157, 11); */
     }
     #hello > img:nth-child(2){
         position: absolute;
-        top: 25%; 
-        right: 100%;
+        top: 25%;
+        right: 0;
         /* transform: translate(-50%, -50%); */
-        opacity: 0;
     }
     #hello > .wrap_cac{
         position: absolute;
@@ -259,7 +264,6 @@
         position: absolute;
         bottom: 50%;
         right: -20%;
-        display: none;
     }
     .wrap_cac > img:nth-child(2){
         position: absolute;
@@ -280,7 +284,6 @@
         position: absolute;
         bottom: 5%;
         left: 30%;
-        display: none;
         z-index: 5;
     }
     .heart_ani_1{
@@ -318,7 +321,7 @@
         margin-bottom: 50px;
     }
     .cuc_rotY{
-        animation: ratateY2 1.5s infinite ;
+        animation: ratateY2 1.5s infinite;
     }
     
     
@@ -353,20 +356,17 @@
     
     /* page3 */
     #page3{
-        width: 100%;
+        width: 33.33%;
         height: 100%;
         position: absolute;
-        top:100%;
-        left: 100%;
+        left: 33.33%;
     
-        /* float: left; */
+        float: left;
     }
     #strength{
         width: 100%;
         height:50%;
         position: relative;
-        left: -50%; /*target 0%*/
-        opacity: 0; /*jquery기능 추가*/
     
         /* background-color: rgb(251, 151, 171); */
     }
@@ -382,7 +382,6 @@
     .s_wrap > h3{
         font-size: 80px;
         font-weight: 700;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         padding-bottom: 50px;
     }
     .s_wrap > p {
@@ -393,46 +392,43 @@
         position: absolute;
         top: 5%;
         left: 5%;
-        /* z-index: 5; */
+        z-index: 5;
     
         /* background-color: aquamarine; */
     }
     #strength > .img_wrap > img:nth-child(1) {
-        height: 800px;
-        position: relative;
-        top: -200px;
-        left: 0;
+        /* width: 270px; */
+        height: 500px;
     }
     #strength > .img_wrap > img:nth-child(2){
         position: absolute;
-        top: 39%;
-        left: -9%;
+        bottom: 38%;
+        left: 10%;
     
         /* background-color: khaki; */
     }
     #strength > .img_wrap > img:nth-child(3){
         position: absolute;
-        top: 34%;
-        left: -1%;
+        bottom: 30%;
+        left: 30%;
     
         /* background-color: khaki; */
     }
     .ani1{
-        animation: strAni 1.2s infinite linear;
+        animation: strAni 1.2s infinite;
     }
     .ani2{
-        animation: strAni 1.8s infinite linear;
+        animation: strAni2 1.8s infinite;
     }
     .ani3{
-        animation: strAni 1.2s infinite linear;
+        animation: strAni3 1.8s infinite;
     }
     #weaknesses{
         width: 100%;
         height: 50%;
         position: relative;
         bottom: 0;
-        right: -50%; /*target 0%*/
-        opacity: 0;
+        left: 0;
     
         /* background-color: rgb(237, 147, 165); */
     }
@@ -449,7 +445,6 @@
         text-align: right;
         font-size: 80px;
         font-weight: 700;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         padding-bottom: 50px;
     }
     .w_wrap > p {
@@ -460,31 +455,25 @@
         position: absolute;
         top: 5%;
         right: -5%;
-        /* z-index: 5; */
+        z-index: 5;
     
         /* background-color: aquamarine; */
     
     }
     #weaknesses > .img_wrap > img:nth-child(1) {
-        width: 500px;
-        height: 400px;
-        position: relative;
-        right: -30px;
-        /* background-color: #f6ef87; */
+        width: 460px;
     }
     #weaknesses > .img_wrap > img:nth-child(2){
         position: absolute;
-        top: 3%;
-        left: 50%;
-        display: none;
+        bottom: 0%;
+        left: 0%;
     
         /* background-color: khaki; */
     }
     #weaknesses > .img_wrap > img:nth-child(3){
         position: absolute;
-        top: 7%;
-        right: 30%;
-        display: none;
+        top: 10%;
+        right: 25%;
     
         /* background-color: khaki; */
     }
@@ -492,13 +481,13 @@
     /* page3 animation */
     @keyframes strAni {
         0%, 100% {
-            transform: rotate(20deg);
+            margin-top: 20px;
         }
         50% {
-            transform: rotate(-20deg);
+            margin-bottom: -20px;
         }
     }
-/*     
+    
     @keyframes strAni2 {
         0%, 100% {
             margin-top: 30px;
@@ -514,25 +503,22 @@
         50%{
             margin-top: -50px;
         }
-    } */
+    }
     
     
     /* page4 */
     #page4{
-        width: 100%;
+        width: 33.33%;
         height: 100%;
         position: absolute;
-        top: 100%;
-        left: 100%;
+        left: 33.33%;
     
-        /* float: left; */
+        float: left;
     }
     #opportunities{
         width: 100%;
         height:50%;
         position: relative;
-        top: -60%; /*target:0*/
-        opacity: 0;
     
         /* background-color: rgb(251, 151, 171); */
     }
@@ -548,7 +534,6 @@
     .o_wrap > h3{
         font-size: 80px;
         font-weight: 700;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         padding-bottom: 50px;
     }
     .o_wrap > p {
@@ -559,24 +544,20 @@
         position: absolute;
         top: 5%;
         left: 0%;
-        /* z-index: 5; */
+        z-index: 5;
     
         /* background-color: aquamarine; */
     }
     #opportunities > .img_wrap > img {
         /* width: 270px; */
-        height: 490px;
-        position: relative;
-        top: 20px;
-        left: 20px;
+        height: 500px;
     }
     #threats{
         width: 100%;
         height: 50%;
         position: relative;
-        bottom: -60%;
+        bottom: 0;
         left: 0;
-        opacity: 0;
     
         /* background-color: rgb(237, 147, 165); */
     }
@@ -593,7 +574,6 @@
         text-align: right;
         font-size: 80px;
         font-weight: 700;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
         padding-bottom: 50px;
     }
     .t_wrap > p {
@@ -604,29 +584,25 @@
         position: absolute;
         top: 5%;
         right: -5%;
-        /* z-index: 5; */
+        z-index: 5;
     
         /* background-color: aquamarine; */
     
     }
     #threats > .img_wrap > img:nth-child(1) {
-        height: 520px;
-        position: relative;
-        top: -130px;
-        left: 116px;
-        /* background-color: #f6ef87; */
+        width: 460px;
     }
     #threats > .img_wrap > img:nth-child(2){
         position: absolute;
-        top: -97px;
-        right: 127px;
+        top: -70px;
+        right: 110px;
     
         /* background-color: khaki; */
     }
     #threats > .img_wrap > img:nth-child(3){
         position: absolute;
-        top: -97px;
-        right: 66px;
+        top: -70px;
+        right: 50px;
     
         /* background-color: khaki; */
     }
@@ -637,10 +613,10 @@
     /* page4 animation */
     @keyframes tanimation {
         0%, 100% {
-            transform: rotateX(20deg);
+            transform: rotate(20deg);
         }
         50% {
-            transform: rotateX(-20deg);
+            transform: rotate(-20deg);
         }
     }
     
@@ -652,39 +628,43 @@
     
         position: absolute;
         top: 100%;
-        left: 100%;
     }
     #battery{
         width: 75%;
         height: 100%;
         float: left;
+    
+        /* background-color: rgba(48, 47, 38, 0.575); */
     }
     .battery_wrap{
         width: 100%;
         height: 16.6%;
+    
+        /* background-color: rgb(215, 164, 189); */
     }
     .battery_wrap > p{
-        width: 30%;
+        width: 33.3%;
         height: 80px;
         line-height: 85px;
         text-align: center;
-        border-radius: 20px;
-        font-size: 40px;
+        color: #92ab8f;
+        font-size: 45px;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.65);
         font-family: 'Black Han Sans', sans-serif, monospace ;
-        margin-top: 38px;
+        margin-top: 40px;
         float: left;
-    }
-    .battery_wrap > p:hover{
-        /* color: rgb(252, 95, 95); */
-        animation: vibration 0.001s infinite linear;
-        /* 자바스크립트로 인덱스 지정해서 각각 다른 색상 주기  */
+        
+        /* background-color: azure; */
     }
     .battery_box{
         width: 60%;
         overflow: hidden;
         float: right;
         margin-top: 20px;
+        /* margin-right: 30px; */
         position: relative;
+    
+        /* background-color: aliceblue; */
     }
     .battery_box > span{
         position: absolute;
@@ -694,16 +674,11 @@
         font-size: 35px;
         font-weight: bold;
         color: #faf5ea;
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.8);
     }
-    .battery_box > span > img{
-        position: absolute;
-        bottom: -14px;
-        left: 30px;
-        width: 70px; 
-
-        animation: twinkle 2s linear infinite;
-    }
+    /* .battery_box > img{
+        animation: pumping 2s infinite;
+    } */
     .wave{
         height: 100px;
         overflow: hidden;
@@ -711,136 +686,191 @@
         top: 13px;
         left: 13px;
         border-radius: 10px;
+        
+        /* background-color: rgb(255, 98, 0); */
     }
-    .betterywave1 {
-        position: absolute;
-        top: -123%;
-        left: -100%; /*-48*/
-        animation: wave1 5s infinite linear;
+    .betterywave {
+        width: 63%;
+        animation: waveBlue 2s infinite;
+        opacity: 80%;
+        transition: all 2s linear;
     }
-    /* .betterywave2{
-        position: absolute;
-        top: -182%;
-        left: -49%;
-        animation: wave2 4s infinite linear;
-    } */
-    .betterywave3{
+    .betterywave2{
+        width: 61%;
+        display: block;
         position: relative;
-        top: -119%;
-        left: -100%; /*-47*/
-        animation: wave1 3s infinite linear;
+        top: -390px;
+        left: 0;
+        transition: all 5s linear;
+        /* background-color: blueviolet; */
     
+        animation: waveSkyblue 2s infinite;
     }
-    .betterywave4 {
-        position: absolute;
-        top: -131%;
-        left: -100%; /*-49*/
-        animation: wave2 4s infinite linear;
-    }
-    /* .betterywave5{
-        position: absolute;
-        top: -82%;
-        left: -46%;
+    .betterywave1122{
+        width: 59%;
+        display: block;
+        position: relative;
+        top: -700px;
+        left: 0;
+        transition: all 5s linear;
+        /* background-color: blueviolet; */
     
-        animation: wave1 4s infinite linear;
-    } */
+        animation: waveSkyblue 2s infinite;
+    }
+    .betterywave3 {
+        width: 62%;
+        top: 400%;
+        animation: waveyell 2s infinite;
+        transition: all 1s linear;
+    }
+    .betterywave4{
+        display: block;
+        position: relative;
+        width: 61%;
+        top: -400px;
+        left: 0;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
+    
+        animation: waveorg 2s infinite;
+    }
+    .betterywave34{
+        display: block;
+        position: relative;
+        width: 57%;
+        top: -630px;
+        left: 0;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
+    
+        animation: waveorg 2s infinite;
+    }
+    .betterywave5 {
+        width: 60%;
+        position: relative;
+        left: -25px;
+        animation: wavered 2s infinite;
+        opacity: 80%;
+        transition: all 1s linear;
+    }
     .betterywave6{
+        width: 63%;
+        display: block;
         position: relative;
-        top: -129%;
-        left: -100%; /*-48*/
+        top: -300px;
+        left: -25px;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
     
-        animation: wave2 3s infinite linear;
+        animation: waveyellowred 2s infinite;
+    }
+    .betterywave56{
+        width: 56%;
+        display: block;
+        position: relative;
+        top: -600px;
+        left: -25px;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
+    
+        animation: waveyellowred 2s infinite;
     }
     .betterywave7 {
-        position: absolute;
-        top: -124%;
-        left: -100%; /*-59*/
-        animation: wave1 5s infinite linear;
-    }
-    /* .betterywave8{
-        position: absolute;
-        top: -138%;
-        left: -59%;
-    
-        animation: wave2 4s infinite linear;
-    } */
-    .betterywave9{
+        width: 62%;
         position: relative;
-        top: -153%;
-        left: -100%; /*-60*/
-    
-        animation: wave1 5s infinite linear;
+        left: -25px;
+        animation: wavepup 2s infinite;
+        opacity: 80%;
+        transition: all 1s linear;
     }
-    .betterywave10 {
-        position: absolute;
-        top: -153%;
-        left: -100%; /*-51*/
-        animation: wave2 4s infinite linear;
-    }
-    /* .betterywave11{
-        position: absolute;
-        top: -143%;
-        left: -51%;
+    .betterywave8{
+        width: 65%;
+        display: block;
+        position: relative;
+        top: -350px;
+        left: -25px;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
     
-        animation: wave1 3s infinite linear;
-    } */
+        animation: wavepupple 2s infinite;
+    }
+    .betterywave78{
+        width: 58%;
+        display: block;
+        position: relative;
+        top: -590px;
+        left: -25px;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
+    
+        animation: wavepupple 2s infinite;
+    }
+    .betterywave9 {
+        width: 65%;
+        animation: wavegreen 2s infinite;
+        opacity: 80%;
+        transition: all 1s linear;
+    }
+    .betterywave10{
+        width: 63%;
+        display: block;
+        position: relative;
+        top: -330px;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
+    
+        animation: waveyellowgreen 2s infinite;
+    }
+    .betterywave910{
+        width: 60%;
+        display: block;
+        position: relative;
+        top: -600px;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
+    
+        animation: waveyellowgreen 2s infinite;
+    }
+    .betterywave11 {
+        width: 65%;
+        animation: waveBlue2 3s infinite;
+        opacity: 80%;
+        transition: all 1s linear;
+    }
     .betterywave12{
+        width: 63%;
+        display: block;
         position: relative;
-        top: -134%;
-        left: -100%; /*-52*/
+        top: -300px;
+        left: 0;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
     
-        animation: wave2 5s infinite linear;
+        animation: waveSkyblue2 2s infinite;
     }
-    .betterywave13 {
-        position: absolute;
-        top: -126%;
-        left: -100%; /*-44*/
-        animation: wave1 3s infinite linear;
-    }
-    /* .betterywave14 {
-        position: absolute;
-        top: -91%;
-        left: -43%;
-    
-        animation: wave2 4s infinite linear;
-    } */
-    .betterywave15{
+    .betterywave13{
+        width: 60%;
+        display: block;
         position: relative;
-        top: -134%;
-        left: -100%; /*-45*/
+        top: -610px;
+        left: 0;
+        transition: all 2s linear;
+        /* background-color: blueviolet; */
     
-        animation: wave1 5s infinite linear;
-    }
-    .betterywave16 {
-        position: absolute;
-        top: -113%;
-        left: -100%; /*-46*/
-        animation: wave2 4s infinite linear;
-    }
-    /* .betterywave17{
-        position: absolute;
-        top: -120%;
-        left: -48%;
-    
-        animation: wave1 3s infinite linear;
-    } */
-    .betterywave18{
-        position: relative;
-        top: -139%;
-        left: -100%; /*-44*/
-    
-        animation: wave2 4s infinite linear;
+        animation: waveSkyblue2 2s infinite;
     }
     #certification{
         width: 25%;
         height: 100%;
         float: right;
+    
+        /* background-color: rgb(184, 245, 247); */
     }
     .cer_line{
         width: 18%;
         height: 100%;
         float: left;
-        background-color: #3b3a37;
+        background-color: #92ab8f;
         background-position: right;
         margin-left: 5px;
         box-sizing: border-box;
@@ -872,37 +902,120 @@
         position: relative;
         width: 100%;
         display: inline-block;
-        color: #f6ef87;
+        color: #3b3a37;
         line-height: 55px;
         writing-mode: vertical-rl;
+    
+        /* background-color:aqua ;*/
     }
     
     /* page5 animation */
-
-    @keyframes vibration{
-        0%{
-            transform: rotate(3deg);
-        }
-        100%{
-            transform: rotate(-3deg);
-        }
-    }
-    @keyframes twinkle{
-        50%{
+   @keyframes twinkle{
+    50%{
         opacity: 0;
-        }
     }
-    @keyframes wave1{
-        100%{
-            transform: rotate(-360deg);
+   }
+    @keyframes waveBlue{
+        0%, 100%{
+            margin-top: -8px;
+        }
+        50%{
+            margin-top: 0px;
         }
     }
     
-    @keyframes wave2{
-        100%{
-            transform: rotate(360deg);
+    @keyframes waveSkyblue{
+        0%, 100%{
+            margin-top: 0px;
         }
- 
+        50%{
+            margin-top: -6px;
+        }
+    }
+    @keyframes waveyell{
+        0%, 100%{
+            margin-top: -10px;
+        }
+        50%{
+            margin-top: 0px;
+        }
+    }
+    
+    @keyframes waveorg{
+        0%, 100%{
+            margin-top: 0px;
+        }
+        50%{
+            margin-top: -10px;
+        }
+    }
+    @keyframes wavered{
+        0%, 100%{
+            margin-top: 0px;
+        }
+        50%{
+            margin-top: -5px;
+        }
+    }
+    
+    @keyframes waveyellowred{
+        0%, 100%{
+            margin-top: -5px;
+        }
+        50%{
+            margin-top: 0px;
+        }
+    }
+    @keyframes wavepup{
+        0%, 100%{
+            margin-top: -7px;
+        }
+        50%{
+            margin-top: 0px;
+        }
+    }
+    
+    @keyframes wavepupple{
+        0%, 100%{
+            margin-top: -6px;
+        }
+        50%{
+            margin-top: 0px;
+        }
+    }
+    @keyframes wavegreen{
+        0%, 100%{
+            margin-top: -7px;
+        }
+        50%{
+            margin-top: 0px;
+        }
+    }
+    
+    @keyframes waveyellowgreen{
+        0%, 100%{
+            margin-top: 0px;
+        }
+        50%{
+            margin-top: -5px;
+        }
+    }
+    @keyframes waveBlue2{
+        0%, 100%{
+            margin-top: -4px;
+        }
+        50%{
+            margin-top: 0px;
+        }
+    }
+    
+    @keyframes waveSkyblue2{
+        0%, 100%{
+            margin-top: 0px;
+        }
+        50%{
+            margin-top: -7px;
+        }
     }
     
     /* page6 */
@@ -910,10 +1023,8 @@
         width: 100%;
         height: 100%;
     
-        position: absolute;
+        position: relative;
         top: 100%;
-        left: 100%;
-        background-color: #92ab8f;
     }
     #works{
         width: 100%;
@@ -948,7 +1059,6 @@
         position: absolute;
         bottom: 20px;
         left: 390px;
-        display: none;
         
         /* background-color: aqua; */
     }
@@ -1021,132 +1131,89 @@
     }
     
     /* portfolioWrap*/
-    /* #portfolioWrap{
+    #portfolioWrap{
         width: 300%;
         height: 100%;
     
         position: absolute;
-        top: 300%;
-        left: 300%;
+        top: 0;
+        left: 0;
 
-        background-color: bisque;
-    } */
+        /* background-color: bisque; */
+    }
     
     /* part1 */
     #part1{
-        width: 100%;
+        
+        width: 33.33%;
         height: 100%;
-        /* float: left; */
+    
         position: absolute;
-        top: 100%;
-        left: 100%;
-
+        top: 0%;
+        left: 33.33%;
+        
         background-color: #f8d7de;
     }
     #page7{
         width: 1200px;
-        height: 100%;
+        overflow: hidden;
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+    
         /* background-color: aqua; */
     }
-    .conbg{
-        height: 700px;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        /* background: url(../images/p1_bg_main.png) no-repeat top / contain; */
-    }
-    #page7 > .conbg > img:nth-child(1) {
+    #page7 > img:nth-child(1) {
+        /* width: 1200px; */
         position: relative;
         left: 50%;
-        top: 25%;
         transform: translateX(-50%);
     }
-    #page7 > .conbg > img:nth-child(2) {
-        width: 50%;
-
+    #page7 > img:nth-child(2) {
+        width: 900px;
         position: relative;
-        margin-bottom: 20px;
         left: 50%;
-        top: 25%;
-
         transform: translateX(-50%);
     }
-    #page7 > .conbg > img:nth-child(3) {
-        width: 50%;
-
+    #page7 > img:nth-child(3) {
+        width: 900px;
         position: relative;
         left: 50%;
-        top: 25%;
-
         transform: translateX(-50%);
     }
     .click > p{
         display: inline-block;
         width: 100px;
         text-align: center;
-        border-bottom: 3px dotted #3b3a37;
+        border-bottom: 3px dotted #333;
+        margin-top: 50px;
         cursor: pointer;
         
         position: relative;
         left: 50%;
-        top: 34%;
         transform: translateX(-50%);
-
-        /* background-color: #f6ef87; */
-    }
-    #page7 > .click > p {
-        top: 34%;
-    }
-    .yello > p{
-        border-bottom: 3px dotted #faf5ea;
     }
     .click > p > a {
-        
         display: inline-block;
-        font-size: 50px;
         width: 100%;
         height: 100%;
-        color: #3b3a37;
-        font-weight: bold;
-        animation: jump 0.5s infinite linear;
     
         /* background-color: aqua; */
     }
-    .yello > p > a {
-        color: #faf5ea;
-    }
-    .click > p:hover > a{
-        animation-play-state:paused;
-    }
-    /* par1 애니메이션 */
-    @keyframes jump{
-        0%, 50%{
-            transform: rotateX(50deg);
-        }
-        100%{
-            transform: rotateX(-50deg);
-        }
-    }
+    /* page7 animation */
     /* part2 */
     #part2{
-        width: 100%;
+        width: 33.33%;
         height: 100%;
-        /* float: left; */
         position: absolute;
-        top: 100%;
-        left: 100%;
-
+        top: 0;
+        left: 33.33%;
         background-color: #92ab8f;
     }
     #page9{
         width: 1200px;
-        height: 100%;
+        overflow: hidden;
         position: relative;
         top: 50%;
         left: 50%;
@@ -1154,37 +1221,30 @@
     
         /* background-color: aqua; */
     }
-    #page9 > .conbg > img:nth-child(1) {
+    #page9 > img:nth-child(1) {
         position: relative;
         left: 50%;
-        top: 30%;
         transform: translateX(-50%);
     }
-    #page9 > .conbg > img:nth-child(2) {
-        width: 600px;
+    #page9 > img:nth-child(2) {
+        width: 900px;
         position: relative;
         left: 50%;
-        top: 35%;
         transform: translateX(-50%);
-    }
-    #page9 > .click > p{
-        top: 48%;
     }
     
     /* part3 */
     #part3{
-        width: 100%;
+        width: 33.33%;
         height: 100%;
-        /* float: left; */
         position: absolute;
-        top: 100%;
-        left: 100%;
-
+        top: 0;
+        left: 33.33%;
         background-color: #f8d7de;
     }
     #page11{
         width: 1200px;
-        height: 100%;
+        overflow: hidden;
         position: relative;
         top: 50%;
         left: 50%;
@@ -1192,24 +1252,30 @@
     
         /* background-color: aqua; */
     }
-    #page11 > .conbg > img:nth-child(1) {
+    #page11 > img:nth-child(1) {
         position: relative;
         left: 50%;
-        top: 30%;
         transform: translateX(-50%);
     }
-    #page11 > .conbg > img:nth-child(2) {
-        /* width: 400px; */
-        height: 100px;
+    #page11 > img:nth-child(2) {
+        width: 400px;
         position: relative;
         left: 50%;
-        top: 35%;
         transform: translateX(-50%);
     }
-    #page11 > .click > p{
-        top: 48%;
+    #page8{
+        width: 100%;
+        overflow: hidden;
+        background-color:#92ab8f;
     }
-
+    #page10{
+        width: 100%;
+        position: relative;
+        top: -100%;
+        left: 100%;
+        overflow: hidden;
+        background-color: #f8d7de;
+    }
     /* contact page */
     #page13{
         width: 100%;
@@ -1218,7 +1284,7 @@
     
         position: absolute;
         top: 100%;
-        left: 100%;
+        left: 0;
     }
     #contact_wrap{
         background: url(../images/p13_bg.png);
@@ -1237,13 +1303,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-
         transform: translate(-50%,-50%);
-        
+    
         /* background-color: antiquewhite; */
-    }
-    #contact.conrot{
-        animation: conrotate 3s linear;
     }
     #contact > img{
         position: absolute;
@@ -1375,14 +1437,6 @@
         }
         50%{
             transform: rotateX(-40deg);
-        }
-    }
-    @keyframes conrotate{
-        from{
-            transform: translate(-50%, -50%) rotateY(0deg);
-        }
-        to{
-            transform: translate(-50%, -50%) rotateY(360deg);
         }
     }
     
