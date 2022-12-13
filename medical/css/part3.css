@@ -5,14 +5,14 @@
 /* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
 
 /* 1. PC기준 */
-@media screen and (min-width:1024px){
+@media screen and (min-width:1200px){
 
 html, body{
     width: 100%;
     font-size: 16px;
     font-family: 'Nanum Gothic', sans-serif, monospace;
     color: #0a0c19;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-sizing: border-box;
 }
 a{
@@ -36,7 +36,7 @@ nav.fixed{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-shadow:4px 4px 4px rgba(0,0,0,0.2);
     z-index: 999;
 }
@@ -104,7 +104,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px; /*150*/
+    padding: 0 150px; /*150*/
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
     
     display: none;
@@ -139,7 +139,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
     
     display: none;
@@ -174,7 +174,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -209,7 +209,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -244,7 +244,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -279,7 +279,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -354,7 +354,7 @@ main::before{
     padding: 17px 0px;
     text-align: center;
 
-    background-color: #faf9f1;
+    background-color: #fefefe;
 }
 #aside > ul > li:not(:last-child){
     box-sizing: border-box;
@@ -456,7 +456,7 @@ main::before{
 
 /* p3Sec2 */
 #p3Sec2{
-    width: 83%;
+    width: 75%;
     float: left;
     margin: 0 12px;
 
@@ -534,8 +534,7 @@ main::before{
     clear: both;
 }
 #search-from{
-    width: 27%;
-    /* background-color: cornsilk; */
+    width: 29%;
     float: right;
     margin: 8px 0;
 }
@@ -640,10 +639,9 @@ main::before{
 
 /* fixed */
 #fixed{
-    width: 70px;
+    width: 8%;
     float: left;
     font-size: 14px;
-    position: fixed;
     right: 8%;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     
@@ -666,8 +664,6 @@ main::before{
     font-weight: bold;
     color: #0a0c19;
     line-height: 20px;
-
-    display: none;
 }
 .quickMenu.show{
     display: block;
@@ -719,14 +715,14 @@ footer > section{
 }
 
 /* 2. 태블릿 기준 */
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1199px){
     html, body{
     width: 100%;
 
-        font-size: 12px;
+        font-size: 16px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -748,7 +744,7 @@ footer > section{
         top: 0;
         left: 0;
         right: 0;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-shadow:4px 4px 4px rgba(0,0,0,0.2);
         z-index: 999;
     }
@@ -784,7 +780,6 @@ footer > section{
     #aside{
         width: 18%;
         float: left;
-        margin-left: 20px;
     }
     #aside > ul{
         width: 100%;
@@ -802,7 +797,7 @@ footer > section{
         padding: 11px 0px;
         text-align: center;
     
-        background-color: #faf9f1;
+        background-color: #fefefe;
     }
     #aside > ul > li:not(:last-child){
         box-sizing: border-box;
@@ -905,7 +900,7 @@ footer > section{
     /* content */
     /* p3Sec2 */
     #p3Sec2{
-        width: 76%;
+        width: 70%;
         float: left;
         margin: 0 12px;
     
@@ -984,7 +979,7 @@ footer > section{
         clear: both;
     }
     #search-from{
-        width: 40%;
+        width: 45%;
         margin: 0 auto;
         margin-bottom: 10px;
     }
@@ -1028,7 +1023,7 @@ footer > section{
         width: 10%;
     }
     #notice-table > thead > tr> th:nth-child(2){
-        width: 60%;
+        width: 40%;
     }
     #notice-table > thead > tr> th:nth-child(3){
         width: 20%;
@@ -1087,14 +1082,12 @@ footer > section{
     
     /* fixed */
     #fixed{
-        width: 70px;
+        width: 8%;
         float: left;
         font-size: 14px;
-        position: fixed;
         right: 10px;
+        margin-top: 5px;
         box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
-        
-        background-color: darkgoldenrod;
     }
     #fixed > h2{
         width: 100%;
@@ -1162,10 +1155,10 @@ footer > section{
 
     html, body{
         width: 100%;
-        font-size: 8px;
+        font-size: 16px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -1187,7 +1180,7 @@ footer > section{
         top: 0;
         left: 0;
         right: 0;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-shadow:4px 4px 4px rgba(0,0,0,0.2);
         z-index: 999;
     }
@@ -1241,7 +1234,7 @@ footer > section{
     }
     #contens > h3{
         padding: 10px 7px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
     }
     #content1{
@@ -1267,25 +1260,25 @@ footer > section{
         width: 100%;
         padding: 10px;
         border-bottom: 1px solid #a28e88;
-        line-height: 20px;
+        line-height: 23px;
+        text-align: justify;
     }
     #content2 > h3{
-        font-size: 13px;
+        font-size: 16px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 6px;
         margin-top: 6px;
     }
-    
     #contens > button{
         background-color: #654339;
         color: #faf9f1;
         border: none;
-        border-radius: 2px;
-        width: 37px;
-        margin: 5px 0;
-        padding: 2px;
-        font-size: 8px;
+        border-radius: 4px;
+        width: 52px;
+        margin: 5px;
+        padding: 5px 10px;
+        font-size: 14px;
     }
 
     /* search form */
@@ -1298,26 +1291,29 @@ footer > section{
         clear: both;
     }
     #search-from{
-        width: 66%;
+        width: 60%;
         margin: 10px auto;
     }
     #search-from > select{
         float: left;
+        padding: 3px;
         margin-right: 5px;
-        font-size: 11px;
+        font-size: 14px;
     }
     #search-from input{
         float: left;
-        width: 56px;
-        font-size: 8px;
+        width: 61px;
+        padding: 1px 2px;
+        font-size: 17px;
     }
     #search-from input:nth-child(3){
         background-color: #654339;
         color: #faf9f1;
         border: none;
-        border-radius: 2px;
-        width: 41px;
-        font-size: 11px;
+        border-radius: 4px;
+        width: 52px;
+        padding: 4px 10px;
+        font-size: 14px;
     }
     #search-from::after{
         content: "";
@@ -1328,6 +1324,7 @@ footer > section{
     /* notice */
     #notice-table{
         width: 100%;
+        line-height: 22px;
     }
     #notice-table > thead{
         width: 100%;
@@ -1343,10 +1340,10 @@ footer > section{
         width: 10%;
     }
     #notice-table > thead > tr> th:nth-child(2){
-        width: 50%;
+        width: 37%;
     }
     #notice-table > thead > tr> th:nth-child(3){
-        width: 15%;
+        width: 0%;
     }
     #notice-table > thead > tr> th:nth-child(4){
         width: 15%;
@@ -1399,7 +1396,6 @@ footer > section{
         width: 10px;
         height: 10px;
     }
-    
     
     /* fixed */
     #fixed{

@@ -4,7 +4,7 @@ $(function() {
     var $nav=$("nav");
     var $window=$(window);
     var navOffsetTop=$nav.offset().top;
-    var navHeight = $nav.height();
+    var navHeight = $nav.height()-6;
     var $main=$("main");
 
     $window.on("scroll",function() {
@@ -12,7 +12,7 @@ $(function() {
 
         if(navOffsetTop < navScrollTop){
             $nav.addClass("fixed");
-            // $main.css("marginTop", navHeight);
+            $main.css("marginTop", navHeight);
         } else{
             $nav.removeClass("fixed");
             $main.removeAttr("style");
@@ -45,6 +45,18 @@ $(function() {
             $subwrapContents.removeClass("on");
         });  
     };
+
+    // 3. media Nav-------------------------------------------------------------------------
+    var $subWrap =$("#subwrap > ul");
+
+    $mainMenu.mouseenter(function(){
+        var $this = $(this);
+
+        $subWrap.addClass("block")
+             .siblings(".block").removeClass("block");
+
+    });
+
 
     // page1---------------------------------------------------------------------------------
     var $asideName =$("#aside > ul > li");

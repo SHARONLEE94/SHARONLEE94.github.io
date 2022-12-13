@@ -4,14 +4,14 @@
 /* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
 
 /* 1. pc기준*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1200px){
 
 html, body{
     width: 100%;
     font-size: 16px;
     font-family: 'Nanum Gothic', sans-serif, monospace;
     color: #0a0c19;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-sizing: border-box;
 }
 a{
@@ -35,7 +35,7 @@ nav.fixed{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-shadow:4px 4px 4px rgba(0,0,0,0.2);
     z-index: 999;
 }
@@ -104,7 +104,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px; /*150*/
+    padding: 0 150px; /*150*/
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
     
     display: none;
@@ -139,7 +139,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
     
     display: none;
@@ -174,7 +174,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -209,7 +209,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -244,7 +244,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -279,7 +279,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -352,7 +352,7 @@ main::before{
     padding: 17px 0px;
     text-align: center;
 
-    background-color: #faf9f1;
+    background-color: #fefefe;
 }
 #aside > ul > li:not(:last-child){
     box-sizing: border-box;
@@ -454,16 +454,13 @@ main::before{
 
 /* p4sec2 - table*/
 #p4Sec2{
-    width: 83%;
+    width: 75%;
     float: left;
     margin: 0 12px;
-
-    /* background-color: rgb(255, 145, 167); */
 }
 #p4Sec2 > h2{
     font-size: 25px;
     font-weight: bold;
-    /* color: #60724c; */
     padding: 17px 0;
 }
 #p4Sec2 > article{
@@ -519,6 +516,7 @@ main::before{
     text-align: center;
     resize: none;
     margin-left: 20px;
+    padding: 10px;
 }
 #personal-information{
     padding: 17px 10px;
@@ -566,14 +564,9 @@ main::before{
 
 /* fixed */
 #fixed{
-    width: 70px;
+    width: 8%;
     float: left;
-    font-size: 14px;
-    position: fixed;
-    right: 180px;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
-    
-    background-color: darkgoldenrod;
 }
 #fixed > h2{
     width: 100%;
@@ -643,14 +636,14 @@ footer > section{
 }
 
 /* 2. 태블릿기준 */
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1199px){
 
     html, body{
         width: 100%;
-        font-size: 12px;
+        font-size: 16px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -672,7 +665,7 @@ footer > section{
         top: 0;
         left: 0;
         right: 0;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-shadow:4px 4px 4px rgba(0,0,0,0.2);
         z-index: 999;
     }
@@ -707,7 +700,6 @@ footer > section{
     #aside{
         width: 18%;
         float: left;
-        margin-left: 20px;
     }
     #aside > ul{
         width: 100%;
@@ -719,13 +711,13 @@ footer > section{
         font-weight: 100;
     }
     #aside > h3{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         color: #654339;
         padding: 11px 0px;
         text-align: center;
     
-        background-color: #faf9f1;
+        background-color: #fefefe;
     }
     #aside > ul > li:not(:last-child){
         box-sizing: border-box;
@@ -827,9 +819,9 @@ footer > section{
     
     /* table */
     #p4Sec2{
-        width: 75%;
-        float: right;
-        margin-right: 20px;
+        width: 70%;
+        float: left;
+        margin: 0 10px;
     }
     #p4Sec2 > h2{
         font-size: 20px;
@@ -844,7 +836,7 @@ footer > section{
     }
     #suggestions{
         padding: 15px 0;
-        line-height: 20px;
+        line-height: 22px;
         border-bottom: 2px solid #654339;
         margin-bottom: 5px;
     
@@ -853,7 +845,7 @@ footer > section{
     #suggestions > p:nth-child(2){
         font-size: 18px;
         font-weight: bold;
-        padding: 9px 0;
+        margin: 9px 0;
     }
     
     #p4Sec2 > article > table{
@@ -865,9 +857,10 @@ footer > section{
         border-bottom: 1px solid #a28e88;
     }
     .tabletr > th {
+        width: 20%;
         background-color: #d4d5cb;
         font-weight: bold;
-        padding: 10px 0;
+        padding: 10px;
         vertical-align: middle;
     }
     .tabletr > td{
@@ -875,9 +868,11 @@ footer > section{
     }
     .tabletr > td > input{
         padding: 5px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
-    #pwalarm span{    
+    #pwalarm span{
+        display: block;
+        margin-top: 10px;
         margin-left: 10px;
         font-size: 14px;
     }
@@ -887,9 +882,11 @@ footer > section{
     .tarea textarea{
         width: 96%;
         height: 100px;
+        box-sizing: border-box;
         text-align: center;
         resize: none;
-        margin-left: 20px;
+        margin-left: 10px;
+        padding: 5px;
     }
     #personal-information{
         padding: 17px 10px;
@@ -900,16 +897,17 @@ footer > section{
     }
     #personal-information > li{
         font-size: 14px;
+        line-height: 18px;
     }
     #personal-information > li:not(:last-child){
         margin-bottom: 10px;
     }
     #personal-information-check{
-        padding-bottom: 17px;
+        margin-bottom: 17px;
     }
     #personal-information-check > li{
         font-size: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     #personal-information-check > ul >li{
         float: left;
@@ -925,7 +923,7 @@ footer > section{
     }
     #checkButton{
         text-align: center;
-        padding-bottom: 17px;
+        margin-bottom: 17px;
     }
     #checkButton > input{
         border: none;
@@ -936,16 +934,12 @@ footer > section{
     }
     
     /* fixed */
-    /* fixed */
     #fixed{
-        width: 70px;
+        width: 8%;
         float: left;
         font-size: 14px;
-        position: fixed;
-        right: 10px;
+        margin-top: 5px;
         box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
-        
-        background-color: darkgoldenrod;
     }
     #fixed > h2{
         width: 100%;
@@ -1013,10 +1007,10 @@ footer > section{
 
 html, body{
     width: 100%;
-    font-size: 8px;
+    font-size: 14px;
     font-family: 'Nanum Gothic', sans-serif, monospace;
     color: #0a0c19;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-sizing: border-box;
 }
 a{
@@ -1038,7 +1032,7 @@ nav.fixed{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-shadow:4px 4px 4px rgba(0,0,0,0.2);
     z-index: 999;
 }
@@ -1080,7 +1074,7 @@ nav.fixed{
     width: 100%;
 }
 #p4Sec2 > h2{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding: 10px 0;
     text-align: center;
@@ -1092,16 +1086,17 @@ nav.fixed{
 }
 #suggestions{
     padding: 5px 10px;
-    line-height: 17px;
+    line-height: 23px;
     border-bottom: 2px solid #654339;
     margin-bottom: 12px;
+    font-size: 16px;
 
     /* background-color: rgb(132, 174, 252); */
 }
 #suggestions > p:nth-child(2){
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 5px 0;
+    padding: 8px 0;
 }
 
 #p4Sec2 > article > table{
@@ -1113,61 +1108,68 @@ nav.fixed{
     border-bottom: 1px solid #a28e88;
 }
 .tabletr > th {
+    width: 30%;
     background-color: #d4d5cb;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 10px;
     vertical-align: middle;
 }
 .tabletr > td{
     padding: 10px 0;
 }
+.tabletr > td >p{
+    line-height: 23px;
+    font-size: 16px;
+}
 .tabletr > td > input{
     padding: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 #pwalarm span{
     display: block;
-    margin-left: 25px;
+    margin-left: 10px;
     margin-top: 10px;
-    font-size: 8px;
+    font-size: 12px;
 }
 .tabletr span{
     color: rgb(139, 23, 23);
 }
 .tarea textarea{
-    width: 96%;
+    width: 92%;
     height: 100px;
     text-align: center;
     resize: none;
-    margin-left: 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 5px;
 }
 #personal-information{
-    padding: 10px;
+    padding: 4px;
     border: 1px solid #a28e88;
-    margin: 12px;
-
-    /* background-color: rgb(248, 248, 156); */
+    margin: 5px;
 }
 #personal-information > li{
-    font-size: 8px;
+    font-size: 14px;
+    line-height: 23px;
 }
-#personal-information > li:not(:last-child){
+/* #personal-information > li:not(:last-child){
     margin-bottom: 6px;
-}
+} */
 #personal-information > li:last-child{
-    line-height: 16px;
+    line-height: 18px;
 }
 #personal-information-check{
     margin-bottom: 17px;
 }
 #personal-information-check > li{
-    font-size: 8px;
+    font-size: 12px;
+    line-height: 23px;
+    margin-bottom: 5px;
 }
 #personal-information-check > ul >li{
     float: left;
-    font-size: 8px;
+    font-size: 14px;
     font-weight: bold;
-    padding-right: 20px;
 }
 #personal-information-check > ul::after{
     content: "";

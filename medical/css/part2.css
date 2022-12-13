@@ -4,14 +4,14 @@
 /* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
 
 /* 1. PC 기준 */
-@media screen and (min-width:1024px){
+@media screen and (min-width:1200px){
 
 html, body{
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Nanum Gothic', sans-serif, monospace;
     color: #0a0c19;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-sizing: border-box;
 }
 a{
@@ -35,7 +35,7 @@ nav.fixed{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-shadow:4px 4px 4px rgba(0,0,0,0.2);
     z-index: 999;
 }
@@ -104,7 +104,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px; /*150*/
+    padding: 0 150px; /*150*/
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
     
     display: none;
@@ -139,7 +139,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
     
     display: none;
@@ -174,7 +174,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -209,7 +209,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -244,7 +244,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -279,7 +279,7 @@ nav.fixed{
     width: 100%;
     box-sizing: border-box;
     background-color: #a28e88;
-    padding: 0 252px;
+    padding: 0 150px;
     box-shadow: 0 3px 4px rgba(0,0,0,0.5);
 
     display: none;
@@ -355,7 +355,7 @@ main::before{
     padding: 17px 0px;
     text-align: center;
 
-    background-color: #faf9f1;
+    /* background-color: #faf9f1; */
 }
 #aside > ul > li:not(:last-child){
     box-sizing: border-box;
@@ -457,7 +457,7 @@ main::before{
 
 /* p2Sec2 */
 #p2Sec2{
-    width: 83%;
+    width: 75%;
     float: left;
     margin: 0 12px;
 
@@ -506,8 +506,7 @@ main::before{
 
 /* search-form */
 #search-from{
-    width: 29%;
-    /* background-color: cornsilk; */
+    width: 31%;
     float: right;
     margin: 8px 0;
 }
@@ -616,10 +615,10 @@ main::before{
 
 /* fixed */
 #fixed{
-    width: 70px;
+    width: 8%;
     float: left;
     font-size: 14px;
-    position: fixed;
+    /* position: fixed; */
     right: 8%;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     
@@ -643,7 +642,7 @@ main::before{
     color: #0a0c19;
     line-height: 20px;
 
-    display: none;
+    /* display: none; */
 }
 .quickMenu.show{
     display: block;
@@ -700,14 +699,13 @@ footer > section::after{
 }
 
 /* 2. 태블릿 기준 */
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1199px){
     html, body{
-    width: 100%;
-
-        font-size: 12px;
+        width: 100%;
+        font-size: 16px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -729,7 +727,7 @@ footer > section::after{
         top: 0;
         left: 0;
         right: 0;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-shadow:4px 4px 4px rgba(0,0,0,0.2);
         z-index: 999;
     }
@@ -764,9 +762,8 @@ footer > section::after{
 
     /* aside */
     #aside{
-        width: 18%;
+        width: 17%;
         float: left;
-        margin-left: 20px;
     }
     #aside > ul{
         width: 100%;
@@ -784,7 +781,7 @@ footer > section::after{
         padding: 11px 0px;
         text-align: center;
     
-        background-color: #faf9f1;
+        /* background-color: #faf9f1; */
     }
     #aside > ul > li:not(:last-child){
         box-sizing: border-box;
@@ -874,7 +871,7 @@ footer > section::after{
         font-weight: bold;
         width: 90%;
         margin: 14px auto;
-        padding: 66px 20px;
+        padding: 66px 0;
         box-sizing: border-box;
     }
     #asdiesub3 > a > img{
@@ -887,12 +884,10 @@ footer > section::after{
     /* content */
     /* p3Sec2 */
     #p2Sec2{
-        width: 76%;
+        width: 72%;
         float: left;
-        margin: 0 12px;
-        margin-top: 12px;
-    
-        /* background-color: rgb(255, 145, 167); */
+        margin: 0 10px;
+        margin-top: 5px;
     }
     #local-nav{
         width: 400px;
@@ -943,7 +938,7 @@ footer > section::after{
         clear: both;
     }
     #search-from{
-        width: 40%;
+        width: 45%;
         margin: 0 auto;
         margin-bottom: 10px;
     }
@@ -984,13 +979,13 @@ footer > section::after{
         padding: 10px;
     }
     #notice-table > thead > tr> th:nth-child(1){
-        width: 10%;
+        width: 5%;
     }
     #notice-table > thead > tr> th:nth-child(2){
-        width: 60%;
+        width: 40%;
     }
     #notice-table > thead > tr> th:nth-child(3){
-        width: 20%;
+        width: 0%;
     }
     #notice-table > thead > tr> th:nth-child(4){
         width: 10%;
@@ -1007,7 +1002,8 @@ footer > section::after{
     }
     #notice-table > tbody > tr > td:nth-child(2) > a{
         display: block;
-        padding: 10px;
+        line-height: 22px;
+        padding: 4px;
         width: 100%;
     }
     
@@ -1043,14 +1039,17 @@ footer > section::after{
         width: 15px;
         height: 15px;
     }
+    #table-caption{
+        margin-top: 5px;
+    }
     
     /* fixed */
     #fixed{
-        width: 70px;
+        width: 8%;
         float: left;
         font-size: 14px;
-        position: fixed;
         right: 10px;
+        margin-top: 5px;
         box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
         
         background-color: darkgoldenrod;
@@ -1120,10 +1119,10 @@ footer > section::after{
 @media screen and (max-width:767px){
     html, body{
         width: 100%;
-        font-size: 8px;
+        font-size: 16px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -1145,7 +1144,7 @@ footer > section::after{
         top: 0;
         left: 0;
         right: 0;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-shadow:4px 4px 4px rgba(0,0,0,0.2);
         z-index: 999;
     }

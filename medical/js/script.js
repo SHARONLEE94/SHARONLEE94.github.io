@@ -2,21 +2,22 @@ $(function() {
 
     // 1.네비
     var $mainNav=$("#nav");
+    var $nav2=$("#nav2");
     var navOffsetTop=$mainNav.offset().top;
     var $con=$("#all-con");
     var $introNav=$("#intronav");
-    var mainnavHeight = $mainNav.height() + $introNav.height();
+    var mainnavHeight = $mainNav.height() - $introNav.height();
 
     $(window).on("scroll",function() {
         var navScrollTop=$(window).scrollTop();
-
+    
         if(navOffsetTop < navScrollTop){
-            $mainNav.addClass("fixed");
-            $introNav.addClass("fix");
+            $mainNav.css("display","none");
+            $nav2.css("display", "block");
             $con.css("marginTop", mainnavHeight);
         } else{
-            $mainNav.removeClass("fixed");
-            $introNav.removeClass("fix");
+            $mainNav.css("display","block");
+            $nav2.css("display", "none");
             $con.removeAttr("style");
         }
     });
@@ -163,6 +164,7 @@ $(function() {
     // 스크롤 시 이미지 나타내기---------------------------------------------------------------
     var $scrollEvent = $(".scrollEvent");
     var $window = $(window);
+    
     var Index = 0;
     
     

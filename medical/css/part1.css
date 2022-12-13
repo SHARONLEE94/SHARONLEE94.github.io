@@ -4,13 +4,13 @@
 /* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
 
 /* 1. pc기준*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1200px){
 html, body{
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Nanum Gothic', sans-serif, monospace;
     color: #0a0c19;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-sizing: border-box;
 }
 a{
@@ -34,7 +34,7 @@ nav.fixed{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #faf9f1;
+    background-color: #fefefe;
     box-shadow:4px 4px 4px rgba(0,0,0,0.2);
     z-index: 999;
 }
@@ -348,7 +348,7 @@ main::before{
     padding: 17px 0px;
     text-align: center;
 
-    background-color: #faf9f1;
+    /* background-color: #faf9f1; */
 }
 #aside > ul{
     width: 100%;
@@ -463,7 +463,7 @@ main::before{
     position: relative;
 }
 #inner-therapy{
-    width: 76%;
+    width: 68%;
     float: left;
     margin: 0 12px;
 
@@ -537,14 +537,14 @@ main::before{
     float: left;
 }
 .pwrap{
-    width: 68%;
+    width: 67%;
     float: left;
     padding-top: 15px;
     padding-bottom: 50px;
     padding-left: 18px;
     line-height: 25px;
     text-align: justify;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .pwrap > p:first-child{
     margin-bottom: 10px;
@@ -576,31 +576,21 @@ main::before{
     padding-top: 17px;
     line-height: 25px;
     text-align: justify;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 /* fixed */
-#fixBoxWrap{
+#quick{
     width: 8%;
     float: left;
-    background-color: burlywood;
-}
-#fixBoxWrap::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-#fixed{
-    width: 70px;
-    float: left;
     font-size: 14px;
-    position: fixed;
+    /* position: fixed; */
     right: 8%;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     
     background-color: darkgoldenrod;
 }
-#fixed > h2{
+#quick > h2{
     width: 100%;
     display: block;
     background-color: #60724c;
@@ -618,7 +608,7 @@ main::before{
     color: #0a0c19;
     line-height: 20px;
 
-    display: none;
+    /* display: none; */
 }
 .quickMenu.show{
     display: block;
@@ -670,14 +660,14 @@ footer > section{
 }
 
 /* 2. 태블릿기준 */
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1199px){
 
     html, body{
         width: 100%;
-        font-size: 12px;
+        font-size: 18px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -756,7 +746,7 @@ footer > section{
         padding: 11px 0px;
         text-align: center;
     
-        background-color: #faf9f1;
+        /* background-color: #faf9f1; */
     }
     #aside > ul > li:not(:last-child){
         box-sizing: border-box;
@@ -862,7 +852,7 @@ footer > section{
     position: relative;
 }
 #inner-therapy{
-    width: 76%;
+    width: 68%;
     float: left;
     margin: 0 12px;
 
@@ -900,6 +890,7 @@ footer > section{
 .summary > p{
     font-weight: bold;
     margin-bottom: 15px;
+    line-height: 24px;
 }
 .summary > ul > li{
     background: url(../image/check2.png) no-repeat;
@@ -930,19 +921,15 @@ footer > section{
     clear: both;
 }
 .sub1 > article > img{
-    width: 29%;
-    float: left;
-    margin: 60px 0;
+    height: 100%;
+    margin: 0 auto;
 }
 .pwrap{
-    width: 66%;
-    float: left;
     padding-top: 15px;
     padding-bottom: 50px;
     padding-left: 18px;
     line-height: 25px;
     text-align: justify;
-    font-weight: bold;
 }
 .pwrap > p:first-child{
     margin-bottom: 10px;
@@ -968,86 +955,82 @@ footer > section{
     text-align: center;
 }
 .imgWrap > img:first-child{
-    margin-right: 30px;
+    margin-right: 15px;
 }
 .pwrap2 > p{
     padding-top: 17px;
     line-height: 25px;
     text-align: justify;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
     
     
-    /* fixed */
-    #fixed{
-        width: 70px;
-        float: left;
-        font-size: 14px;
-        position: fixed;
-        right: 10px;
-        box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
-        
-        background-color: darkgoldenrod;
-    }
-    #fixed > h2{
-        width: 100%;
-        display: block;
-        background-color: #60724c;
-        color: #faf9f1;
-        box-sizing: border-box;
-        border-bottom: 2px solid #faf9f1;
-        padding: 17px 0px;
-        text-align: center;
-    }
-    .quickMenu{
-        width: 100%;
-        box-sizing: border-box;
-        background-color: #d4d5cb;
-        font-weight: bold;
-        color: #0a0c19;
-        line-height: 20px;
-    }
-    .quickMenu.show{
-        display: block;
-    }
-    .quickMenu > li{
-        text-align: center;
-        border-bottom: 1px solid #faf9f1;
-    }
-    .quickMenu > li > a{
-        display: block;
-        padding: 30px 0px;
-    }
+/* fixed */
+#quick{
+    width: 8%;
+    float: left;
+    font-size: 14px;
+    margin-top: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     
-    /* footer */
-    footer{
-        width: 100%;
-        background-color: #e0dad8 ;
-        overflow: hidden;
-    }
-    #footerlogo > img{
-        height: 40px;
-        margin: 20px auto;
-    }
-    #footerInfo{
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    #footerInfo > p{
-        text-align: center;
-        margin-bottom: 10px;
-        clear: both;
-    }
-    #footerInfo > p:last-child{
-        margin-bottom: 20px;
-    }
-    #footerInfo > ul{
-        text-align: center;
-    }
-    #footerInfo > ul > li{
-        margin-bottom: 10px;
-        
-    }
+    /* background-color: darkgoldenrod; */
+}
+#quick > h2{
+    width: 100%;
+    display: block;
+    background-color: #60724c;
+    color: #faf9f1;
+    box-sizing: border-box;
+    border-bottom: 2px solid #faf9f1;
+    padding: 17px 0px;
+    text-align: center;
+}
+.quickMenu{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #d4d5cb;
+    font-weight: bold;
+    color: #0a0c19;
+    line-height: 20px;
+}
+.quickMenu > li{
+text-align: center;
+    border-bottom: 1px solid #faf9f1;
+}
+.quickMenu > li > a{
+    display: block;
+    padding: 30px 0px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #e0dad8 ;
+    overflow: hidden;
+}
+#footerlogo > img{
+    height: 40px;
+    margin: 20px auto;
+}
+#footerInfo{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#footerInfo > p{
+    text-align: center;
+    margin-bottom: 10px;
+    clear: both;
+}
+#footerInfo > p:last-child{
+    margin-bottom: 20px;
+}
+#footerInfo > ul{
+    text-align: center;
+}
+#footerInfo > ul > li{
+    margin-bottom: 10px;
+    
+}
 }
 
 /* 3. 모바일기준*/
@@ -1058,7 +1041,7 @@ footer > section{
         font-size: 8px;
         font-family: 'Nanum Gothic', sans-serif, monospace;
         color: #0a0c19;
-        background-color: #faf9f1;
+        background-color: #fefefe;
         box-sizing: border-box;
     }
     a{
@@ -1234,7 +1217,7 @@ footer > section{
 }
 
 /* fixed */
-#fixed{
+#quick{
   display: none;
 }
     

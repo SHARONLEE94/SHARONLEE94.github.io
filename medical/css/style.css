@@ -46,7 +46,7 @@ button{
     font-size: 11px;
 }
 #intronav.fix{
-    display: none;
+    opacity: 0;
 }
 
 /* main nav */
@@ -55,7 +55,7 @@ button{
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     background-color: #faf9f1;
     box-shadow:4px 4px 4px rgba(0,0,0,0.2);
     z-index: 999;
@@ -103,6 +103,75 @@ button{
 }
 #search1 > a > img{
     cursor: pointer;
+}
+
+/* mainNav2 */
+#nav2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+    background-color: #faf9f1;
+    box-shadow:4px 4px 4px rgba(0,0,0,0.2);
+    z-index: 999;
+
+    display: none;
+}
+#mainNav2{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    position: relative;
+}
+#mainNav2 > a{
+    float: left;
+}
+#mainNav2 > a > img{
+    height: 60px;
+}
+#mainNav2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#mainmenu2{
+    float: left;
+    padding: 0 70px;
+}
+#mainmenu2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#mainmenu2 > li{
+    float: left;
+    width: 110px;
+    text-align: center;
+}
+#mainmenu2 > li > a{
+    padding: 20.5px 0;
+    line-height: 60px;
+}
+#search2{
+    float: right;
+}
+#search2 > button{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+#search2 > button:first-child{
+    display: block;
+    float: left;
+    padding: 19.5px 21px;
+}
+#search2 > button:nth-child(2){
+    float: left;
+    display: block;
+    padding: 21.5px 15px;
+    background-color: #60724c;
+    color: #e0dad8;
 }
 
 /* nav */
@@ -509,13 +578,13 @@ button{
     cursor: pointer;
 }
 .reserve-button:hover{
-    animation: fill 0.5s linear both;
+    animation: fill 0.1s linear both;
 }
 
 @keyframes fill{
-    0%{
+    /* 0%{
         background-color: #e0dad8;
-    }
+    } */
     100%{
         background-color: #856961;
         color: #e0dad8;
