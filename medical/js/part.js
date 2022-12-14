@@ -4,7 +4,7 @@ $(function() {
     var $nav=$("nav");
     var $window=$(window);
     var navOffsetTop=$nav.offset().top;
-    var navHeight = $nav.height()-6;
+    var navHeight = $nav.height();
     var $main=$("main");
 
     $window.on("scroll",function() {
@@ -47,13 +47,14 @@ $(function() {
     };
 
     // 3. media Nav-------------------------------------------------------------------------
-    var $subWrap =$("#subwrap > ul");
+    var $subWrap =$("#subwrap");
 
     $mainMenu.mouseenter(function(){
-        var $this = $(this);
+        $subWrap.addClass("subNav");
 
-        $subWrap.addClass("block")
-             .siblings(".block").removeClass("block");
+        $subWrap.mouseleave(function(){
+            $subWrap.removeClass("subNav");
+        });
 
     });
 
