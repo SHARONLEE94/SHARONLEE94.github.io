@@ -141,8 +141,8 @@ $pointerButton.on("click", function() {
     $this.addClass("twinkle")
            .siblings(".twinkle").removeClass("twinkle");
     
-    var $pointsSelector = $this.data("pointer")
-    ;
+    var $pointsSelector = $this.data("pointer");
+
     $points.removeClass("twinkle")
             .filter($pointsSelector)
             .addClass("twinkle");
@@ -151,21 +151,35 @@ $pointerButton.on("click", function() {
 
 // 4. scrollEvent
 var $scrollEvent = $(".scrollEvent");
-    var $window = $(window);
-    
-    var Index = 0;
+var $window = $(window);
     
     $window.on("scroll", function() {
         var scrollTop = $window.scrollTop() + $window.height();
 
         $scrollEvent.each(function(){
             var $this = $(this);
-            var offsetTop = $this.offset().top + $this.height();
+            var offsetTop = $this.offset().top + $this.height()*0.5;
 
             if(scrollTop >= offsetTop) {
-
+                if($scrollEvent.hasClass("one")){
+                    $this.addClass("showOne");
+                }
+                if($scrollEvent.hasClass("two")){
+                    $this.addClass("showTwo");
+                }
+                if($scrollEvent.hasClass("three")){
+                    $this.addClass("showThree");
+                }
             }else if(scrollTop < offsetTop){
-
+                if($scrollEvent.hasClass("one")){
+                    $this.removeClass("showOne");
+                }
+                if($scrollEvent.hasClass("two")){
+                    $this.removeClass("showTwo");
+                }
+                if($scrollEvent.hasClass("three")){
+                    $this.removeClass("showThree");
+                }
             }
         });
     });;

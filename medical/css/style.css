@@ -425,10 +425,10 @@ header::after{
 }
 #reserve > form > h3{
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 900;
     text-align: center;
     margin-bottom: 30px;
-    color: #eb1358;
+    color: #333333;
 }
 #re_con1{
     margin-bottom: 30px;
@@ -501,6 +501,20 @@ header::after{
 /* p2 */
 #p2 > section{
     padding: 50px 0;
+    position: relative;
+
+    opacity: 0;
+}
+#p2 > section.showOne{
+    animation: showOne 1s linear both;
+}
+@keyframes showOne {
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #p2 > section > h3{
     font-size: 20px;
@@ -582,6 +596,19 @@ header::after{
     width: 40%;
     float: left;
     margin: 154px 0;
+
+    opacity: 0;
+}
+#comments.showTwo{
+    animation: showTwo 1s linear both;
+}
+@keyframes showTwo{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #comments > p:nth-child(1){
     font-size: 50px;
@@ -606,6 +633,19 @@ header::after{
     padding: 0 83px;
     box-sizing: border-box;
     position: relative;
+
+    opacity: 0;
+}
+#pointer_wrap.showThree{
+    animation: showThree 1s linear both;
+}
+@keyframes showThree{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #pointer_img_wrap{
     position: absolute;
@@ -704,6 +744,17 @@ header::after{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.pointer_button > div.twinkle{
+    animation: upDown 1s linear;
+}
+@keyframes upDown {
+    0%,100%{
+        top: 0;
+    }
+    50%{
+        top: -15px;
+    }
+}
 #circle1{
     float:left ;
 }
@@ -718,6 +769,11 @@ header::after{
 /* p4 */
 #p4{
     padding: 50px 0;
+
+    opacity: 0;
+}
+#p4.showOne{
+    animation: showOne 1s linear both;
 }
 #p4 > h3{
     font-size: 20px;
