@@ -9,6 +9,7 @@
 
 html, body{
     width: 100%;
+    height: 100%;
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif, monospace;
     font-weight: 300;
@@ -128,10 +129,10 @@ header::after{
     margin: 20px 0;
 }
 #search_page{
-    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0; left: 0;
+    position: absolute;
+    top: 0; bottom: 0;
     background-color: rgba(51, 51, 51,95%);
 
     z-index: 999;
@@ -140,7 +141,7 @@ header::after{
 }
 #search_open{
     width: 60%;
-    position: absolute;
+    position: relative;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
 
@@ -156,6 +157,7 @@ header::after{
     top: 100px;
     right: 100px;
     color: transparent;
+    cursor: pointer;
 }
 #search_open > input{
     width: 100%;

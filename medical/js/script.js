@@ -54,7 +54,6 @@ var isAnimated = false;
 var photoIndex = 0;
 
 
-
 // imgslide
 timerId = window.setInterval(imgSlide , delay);
 
@@ -184,6 +183,19 @@ var $window = $(window);
         });
     });;
 
+
+// 5. search
+var $search=$("#search > a");
+var $searchPage = $("#search_page");
+var $exit = $("#search_page > span");
+
+$search.on("click", function() {
+    $searchPage.css("display", "block");
+});
+
+$exit.on("click", function() {
+    $searchPage.removeAttr("style");
+});
 
 
 
