@@ -238,27 +238,22 @@ header::after{
 }
 #hospital_introduce{
     position: absolute;
-    top: 10px;
     left: 1px;
 }
 #clinic{
     position: absolute;
-    top: 10px;
     left: 169px;
 }
 #special_clinic{
     position: absolute;
-    top: 10px;
     left: 337px;
 }
 #rehabilitate{
     position: absolute;
-    top: 10px;
     left: 505px;
 }
 #alarm{
     position: absolute;
-    top: 10px;
     left: 673px;
 }
 
