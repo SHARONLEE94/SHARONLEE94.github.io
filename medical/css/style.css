@@ -197,6 +197,10 @@ header::after{
 .subwrap_contents{
     display: none;
 }
+.subwrap_contents span{
+    color: #eb1358;
+    font-size: 12px;
+}
 .subwrap_contents.on{
     display: block;
 }
@@ -236,6 +240,9 @@ header::after{
 }
 .subwrap_contents > li:hover > a{
     background-color: #eb1358;
+    color: #fefefe;
+}
+.subwrap_contents > li:hover > a > span{
     color: #fefefe;
 }
 #hospital_introduce{
