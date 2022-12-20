@@ -1,0 +1,155 @@
+/* 색상 */
+/* 검정-#333333 배경-#fefefe 다홍(주조색)-#eb1358 > 다홍2-#ef4279 > 다홍3-#f7a1bc > 분홍-#fbd0de 자주색-#760a2c */
+/* 회색-#cfcfcf 사람색상-#D4B3B3*/
+/* 폰트 */
+/*  */
+/* font-family: 'Do Hyeon', sans-serif, monospace; 강조 */
+/* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
+/* font-family: 'Noto Sans KR', sans-serif, monospace */
+
+/* suggestions */
+#suggestions > h2{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+#pBackground{
+    background-color: #fbecf2;
+    padding: 50px 0;
+}
+.summary{
+    margin: 0 auto;
+}
+.summary > h3{
+    font-size: 23px;
+    color: #eb1358;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 13px;
+}
+.summary > p{
+    font-weight: 500;
+    text-align: center;
+    line-height: 23px;
+}
+
+/* suggestCon */
+#suggestCon{
+    margin: 50px auto;
+}
+#suggestCon > h3{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    margin-left: 100px;
+}
+#suggestCon > h3::before{
+    content: "";
+    display: inline-block;
+    height: 23px;
+    border-left: 5px solid #eb1358;
+    margin-right: 10px;
+}
+
+/* table */
+#suggestCon > table{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.tabletr{
+    border-bottom: 1px solid #eb1358;
+}
+.tabletr:first-child{
+    border-top: 2px solid #eb1358;
+}
+.tabletr:last-child{
+    border-bottom: 2px solid #eb1358;
+}
+.tabletr > th {
+    background-color: #fbecf2;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 15px;
+}
+.tabletr > td{
+    padding: 10px 0;
+}
+.tabletr > td > input{
+    padding: 5px;
+    margin-left: 20px;
+}
+#pwAlarm span{    
+    margin-left: 10px;
+    font-size: 16px;
+}
+.tabletr span{
+    color: #eb1358;
+}
+.tabletr h4{
+    font-weight: 500;
+    margin: 10px 0;
+}
+.tarea textarea{
+    width: 96%;
+    height: 100px;
+    text-align: left;
+    resize: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/* personal_info */
+#personal_Info{
+    width: 1000px;
+    padding: 17px;
+    border: 2px solid #eb1358;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+#personal_Info > li{
+    font-size: 16px;
+}
+#personal_Info > li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+#personal_Info_Check{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+#personal_Info_Check > h3{
+    margin-bottom: 30px;
+}
+#personal_Info_Check > h3 > a{
+    text-decoration: underline;
+}
+#personal_Info_Check > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#personal_Info_Check > ul > li{
+    float: left;
+    margin-right: 20px;
+}
+#check_Button{
+    width: 260px;
+    margin: 0 auto;
+}
+#check_Button > input{
+    width: 120px;
+    height: 30px;
+    background-color: #fefefe;
+    border: 1px solid #eb1358;
+    text-align: center;
+}
+#check_Button > input:hover{
+    background-color: #eb1358;
+    color: #fefefe;
+}

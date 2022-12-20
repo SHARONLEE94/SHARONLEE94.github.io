@@ -1,0 +1,201 @@
+/* 색상 */
+/* 검정-#333333 배경-#fefefe 다홍(주조색)-#eb1358 > 다홍2-#ef4279 > 다홍3-#f7a1bc > 분홍-#fbd0de 자주색-#760a2c */
+/* 회색-#cfcfcf 사람색상-#D4B3B3*/
+/* 폰트 */
+/*  */
+/* font-family: 'Do Hyeon', sans-serif, monospace; 강조 */
+/* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
+/* font-family: 'Noto Sans KR', sans-serif, monospace */
+
+
+/* con */
+#con{
+    margin-bottom: 50px;
+}
+/* suggestions */
+#alarmPage > h2{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+#alarmPage > article{
+    border-top: 2px solid #eb1358;
+    border-bottom: 2px solid #eb1358;
+}
+#alarmPage::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.alarmContents{
+    margin: 0 auto;
+}
+.alarmContents > h3{
+    font-size: 23px;
+    color: #333333;
+    font-weight: 500;
+    padding: 13px 0;
+    border-bottom: 1px solid #eb1358;
+}
+.alarmContents > p{
+    font-weight: 500;
+    text-align: center;
+    line-height: 23px;
+}
+#content1{
+    font-size: 18px;
+    padding: 20px;
+    background-color: #fbecf2;
+    border-bottom: 1px solid #eb1358;
+}
+#content1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#content1 >p{
+    float: left;
+}
+#content1 >p:nth-child(1),
+#content1 >p:nth-child(3){
+    width: 12.5%;
+    font-weight: 500;
+}
+#content1 >p:nth-child(2),
+#content1 >p:nth-child(4){
+    width: 37.5%;
+}
+#content2{
+    padding: 20px;
+}
+#content2 > h3{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#content2 > p{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+#content2 > p > span{
+    font-weight: 500;
+}
+#alarmPage button{
+    display: block;
+    width: 120px;
+    height: 30px;
+    background-color: #fefefe;
+    border: 1px solid #eb1358;
+    text-align: center;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/* #search_from */
+#search_from{
+    width: 500px;
+    margin: 0 auto;
+}
+#search_from::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#search_from > select{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #eb1358;
+    float: left;
+    margin-right: 20px;
+}
+#search_from > input{
+    float: left;
+}
+#search_from > input:nth-child(2){
+    width: 275px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #eb1358;
+}
+#search_from > input:nth-child(3){
+    height: 30px;
+    width: 100px;
+    border: 1px solid #eb1358;
+    background-color: #fefefe;
+    display: block;
+}
+#search_from > input:nth-child(3):hover{
+    background-color: #eb1358;
+    color: #fefefe;
+}
+
+/* table */
+#notice_table{
+    width: 100%;
+    margin: 30px 0;
+}
+#notice_table > thead{
+    width: 100%;
+    background-color: #fbecf2;
+    font-weight: 500;
+    border-top: 2px solid #eb1358;
+    border-bottom: 1px solid #eb1358;
+}
+#notice_table > thead > tr> th{
+    padding: 10px;
+}
+#notice_table > thead > tr> th:nth-child(1){
+    width: 10%;
+}
+#notice_table > thead > tr> th:nth-child(2){
+    width: 60%;
+}
+#notice_table > thead > tr> th:nth-child(3){
+    width: 20%;
+}
+#notice_table > thead > tr> th:nth-child(4){
+    width: 10%;
+}
+#notice_table > tbody{
+    width: 100%;
+}
+#notice_table > tbody > tr{
+    border-bottom: 1px solid #eb1358;
+}
+#notice_table > tbody > tr > td:not(:nth-child(2)){
+    padding: 10px;
+    text-align: center;
+}
+#notice_table > tbody > tr > td:nth-child(2) > a{
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+#pageNumbers{
+    width: 100px;
+    margin: 0 auto;
+}
+#pageNumbers::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#pageNumbers > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#pageNumbers > ul > li{
+    float: left;
+}
+#pageNumbers > ul > li > a{
+    display: block;
+    padding: 4px;
+}
+#pageNumbers img{
+    display: none;
+}
