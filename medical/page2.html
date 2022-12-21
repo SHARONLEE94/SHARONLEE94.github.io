@@ -140,20 +140,20 @@
             </article>
         </section>
 
-        <section id="suggestCon" class="w1200">
+        <form id="suggestCon" class="w1200">
             <h3>건의사항 작성란</h3>
             <table>
                 <tr class="tabletr">
                     <th><span>*</span> 비밀번호</th>
-                    <td id="pwAlarm"><input type="password" id="password"><span>(작성자가 작성한 건의사항 수정시 필요)</span></td>
+                    <td id="pwAlarm"><input type="password" id="pw4" placeholder="4글자 이상 입력하세요." autocomplete="off" required><span>(작성자가 작성한 건의사항 수정시 필요)</span></td>
                 </tr>
                 <tr class="tabletr">
                     <th><span>*</span> 제목</th>
-                    <td><input type="text" id="title"></td>
+                    <td><input type="text" id="title" autocomplete="off" required></td>
                 </tr>
                 <tr class="tabletr tarea">
                     <th><span>*</span> 내용</th>
-                    <td><textarea id="textarea-contents" placeholder="내용을 입력해 주세요."></textarea></td>
+                    <td><textarea id="textarea-contents" placeholder="내용을 입력해 주세요." autocomplete="off" required></textarea></td>
                 </tr>
                 <tr class="tabletr">
                     <td colspan="2">
@@ -187,10 +187,10 @@
             </div>
 
             <div id="check_Button">
-                <input type="submit" id="submit" value="제출하기">
+                <input type="submit" id="reserveSubmit" value="제출하기">
                 <input type="reset" id="reset" value="돌아가기">
             </div>
-        </section>
+        </form>
     </div>
 
 

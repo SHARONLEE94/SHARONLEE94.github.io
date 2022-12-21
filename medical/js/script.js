@@ -197,6 +197,67 @@ $exit.on("click", function() {
     $searchPage.removeAttr("style");
 });
 
+// 6. submit event
+var $reserveForm = $("#re_con1");
+var $reserveName = $("#reserve_name");
+var $reservePhone = $("#reserve_phone");
+var $reserveBtn = $("#reserve_btn");
+var $pw4 = $("#pw4");
+var $title = $("#title");
+var $textCon= $("#textarea-contents");
+
+$reserveName.focusout(focusValue);
+$reserveName.focusin(focusReset);
+$reservePhone.focusout(focusValue);
+$reservePhone.focusin(focusReset);
+
+$pw4.focusout(focusValue2);
+$pw4.focusin(focusReset);
+$title.focusout(focusValue);
+$title.focusin(focusReset);
+$textCon.focusout(focusValue);
+$textCon.focusin(focusReset);
+
+
+    // 기능1.
+    function focusValue() {
+        var $this = $(this);
+        var $length = $this.val().length;
+        
+        if($length== 0){
+            $this.css({
+                "border":"5px solid #eb1358"
+            });
+        }else{
+            $this.removeAttr("style");
+        }
+    }
+    
+    function focusValue2() {
+        var $this = $(this);
+        var $length = $this.val().length;
+        
+        if($length == 0){
+            $this.css({
+                "border":"5px solid #eb1358",
+            });
+        }else if($length < 4){
+            $this.css({
+                "border":"5px solid gold"
+            });
+            alert("4글자 이상 입력하세요.");
+        }else{
+            $this.removeAttr("style");
+        }
+    }
+    
+    // 기능2.
+    function focusReset() {
+    var $this = $(this);
+
+    $this.removeAttr("style");  
+}
+
 
 
 

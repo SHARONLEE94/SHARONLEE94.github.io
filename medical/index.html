@@ -144,14 +144,14 @@
                     <form>
                         <h3>온라인 예약</h3>
                         <p id="re_con1">
-                            <input type="text" placeholder="이름">
-                            <input type="text" placeholder="연락처">
+                            <input type="text" id="reserve_name" placeholder="이름" autocomplete="off" required>
+                            <input type="text" id="reserve_phone" placeholder="연락처 또는 메일주소" autocomplete="off" required>
                         </p>
                         <p id="re_con2">
-                            <input type="button" class="first-visit" value="초진"><input type="button" class="re-visit" value="재진">
+                            <input type="button" id="first_button" class="first-visit" value="초진"><input type="button" class="re-visit" value="재진">
                         </p>
                         <p id="re_con3">
-                            <input type="submit" class="reserve-button" value="예약하기">
+                            <input type="submit" id="reserve_btn" class="reserve-button" value="예약하기">
                         </p>
                     </form>
                     <p>※ 기입하신 정보는 예약 목적 외 다른 목적으로<br> 사용되지 않습니다.</p>
