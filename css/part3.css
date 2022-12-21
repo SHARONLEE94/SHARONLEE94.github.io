@@ -173,9 +173,11 @@ nav > p > a:hover {
     position: relative;
 }
 .renewal >img{
+    width: 477px;
+    height: 477px;
     position: relative;
-    top: -14px;
-    left: -39%;
+    top: 0;
+    left: 0;
 }
 .web_cons_wrap > a {
     width: 100%;
@@ -198,7 +200,7 @@ nav > p > a:hover {
     /* background-color:aquamarine ; */
 }
 .renewal > a{
-    color: #faf5ea;
+    color: #3b3a37;
 }
 .web_cons_wrap > a:hover {
     background-color: black;
