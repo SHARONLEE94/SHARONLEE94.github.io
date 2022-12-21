@@ -258,6 +258,17 @@ $textCon.focusin(focusReset);
     $this.removeAttr("style");  
 }
 
+// 7.초진/재진
+    var $buttons=$("#re_con2 > input[type=button]");
+
+    $buttons.on("click", function() {
+
+        $(this).addClass("check")
+            .siblings(".check").removeClass("check");
+
+    });
+
+
 
 
 

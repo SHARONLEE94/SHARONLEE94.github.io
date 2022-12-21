@@ -471,8 +471,14 @@ header::after{
     border-right: none;
 }
 #re_con2 > input:hover{
-    border: 5px solid #eb1358;
-    color: #eb1358;
+    border: 3px solid #eb1358;
+    background-color: #fbd0de;
+    color: #333333;
+    font-weight: bold;
+}
+#re_con2 > input.check{
+    background-color: #fbd0de;
+    color: #333333;
     font-weight: bold;
 }
 #re_con3{
