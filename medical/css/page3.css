@@ -176,7 +176,7 @@
     width: 100%;
 }
 #pageNumbers{
-    width: 100px;
+    width: 160px;
     margin: 0 auto;
 }
 #pageNumbers::after{
@@ -192,10 +192,17 @@
 #pageNumbers > ul > li{
     float: left;
 }
+#pageNumbers > ul > li:hover > a{
+    color: #eb1358;
+}
+#pageNumbers > ul > li:first-child > a > img,
+#pageNumbers > ul > li:last-child > a > img{
+    margin: 4px 10px;
+}
 #pageNumbers > ul > li > a{
     display: block;
     padding: 4px;
 }
 #pageNumbers img{
-    display: none;
+    width: 10px;
 }
