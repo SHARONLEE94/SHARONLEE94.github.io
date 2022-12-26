@@ -40,7 +40,7 @@ nav::after{
     height: 70px;
     background-color: rgba(255,255,255,0.3);
 
-    border-bottom: 5px solid #d32d2c;
+    border-bottom: 3px solid #d32d2c;
     position: relative;
 }
 #navWrap > img{
@@ -48,6 +48,14 @@ nav::after{
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
+}
+#navWrap > img.change{
+    animation: change 0.7s linear both;
+}
+@keyframes change{
+    100%{
+        transform: translateY(-50%) rotate(225deg);
+    }
 }
 #mainNav{
     display: none;
@@ -73,10 +81,10 @@ nav::after{
     right: 20px;
     transform: translateY(-50%);
 
-    width: 150px;
+    width: 200px;
     height: 30px;
-    border-radius: 100px;
-    border: 2px solid #d32d2c;
+    border-radius: 5px;
+    border: 3px solid #d32d2c;
 
     padding: 0  10px;
 }
@@ -164,7 +172,8 @@ nav::after{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background: linear-gradient(to top, rgb(255,255,255) 50%, rgb(32, 38, 91) 50%);
+    background-color: #20265b;
+    /* background: linear-gradient(to top, rgb(255,255,255) 50%, rgb(32, 38, 91) 50%); */
     position: relative;
     z-index: 10;
     border: 1px solid #333333;
@@ -232,19 +241,26 @@ nav::after{
     border-radius: 50%;
     margin-right: 20px;
     position: relative;
+    top: 20px;
+
+    opacity: 0;
 
     box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+}
+#circle > div.move{
+    animation: cirMove 0.7s linear both;
+}
+@keyframes cirMove{
+    100%{
+        top: 0;
+        opacity: 1;
+    }
 }
 #circle > div:last-child{
     margin-right: 0;
 }
 #circle > div >span{
     position: absolute;
-}
-#cir_comment::after{
-    content: "";
-    display: block;
-    clear: both;
 }
 .num{
     font-size: 30px;
@@ -257,6 +273,11 @@ nav::after{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#cir_comment::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 #cir_comment{
     position: relative;
     top: 18%;
@@ -264,25 +285,25 @@ nav::after{
     transform: translateX(-50%);
     text-align: center;
     line-height: 23px;
+    color: #f7f7f6;
 }
 #cir_comment >span{
     float: left;
-    color: #333333;
+    color: #f7f7f6;
     width: 199px;
     font-weight: 700;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #p2_comment{
     width: 100%;
     line-height: 30px;
     text-align: center;
     position: absolute;
-    color: #333333;
-    top: 73%;
+    color: #f7f7f6;
+    top: 77%;
     left: 50%;
     transform: translateX(-50%);
-    font-weight: 700;
 }
 
 /* p3 */
@@ -393,7 +414,6 @@ nav::after{
     height: 120%;
     box-sizing: border-box;
     padding-top: 60px;
-    padding-bottom: 150px;
     border-top: 1px solid #333333;
     border-bottom: 1px solid #333333;
 }
@@ -402,13 +422,9 @@ nav::after{
     margin: 0 auto;
     position: relative;
 }
-#p4Wrap > ul::after{
-    content: "";
-    display: block;
-    clear: both;
-}
 #p4Wrap > ul{
     margin: 77px 0;
+    overflow: hidden;
 }
 #p4Wrap > ul > li{
     float: left;
@@ -471,6 +487,7 @@ nav::after{
 #p5Wrap{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 #p5_fixed{
     width: 30%;
@@ -490,10 +507,11 @@ nav::after{
     color: #bdcd35;
 }
 #imgWrap{
-    padding: 119px 0;
     width: 70%;
-    float: left;
     overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #imgWrap::after{
     content: "";
@@ -503,6 +521,7 @@ nav::after{
 #imgWrap > ul{
     width: 300%;
     position: relative;
+    left: -150px;
 }
 #imgWrap > ul > li{
     float: left;
@@ -513,5 +532,83 @@ nav::after{
     height: 250px;
 }
 
-
 /* footer */
+footer{
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #333333;
+}
+footer > div{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+#sec1{
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+#sec1 > div{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#sec1 > div > span{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#sec2{
+    position: relative;
+}
+#sec2 > select{
+    width: 100%;
+    padding: 10px 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #333333;
+
+}
+#sec3{
+    position: relative;
+}
+#sec3_wrap{
+    width: 38%;
+    margin: 0 auto;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#sec3_wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+#sec3_wrap > p{
+    width: 52px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#sec3_wrap > div{
+    width: 117px;
+    float: left;
+    text-align: center;
+}
+#sec3_wrap > div > h5{
+    margin-bottom: 2px;
+}
+#sec3imgWrap{
+    width: 90px;
+    margin: 0 auto;
+}
+#sec3imgWrap > img{
+    float: left;
+    margin-right: 5px;
+}
+#sec3imgWrap > img:last-child{
+    margin-right: 0;
+}

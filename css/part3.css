@@ -172,7 +172,14 @@ nav > p > a:hover {
 .self > img{
     position: relative;
 }
-.renewal >img{
+.renewal > img{
+    width: 477px;
+    height: 477px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.HMM > img{
     width: 477px;
     height: 477px;
     position: relative;
