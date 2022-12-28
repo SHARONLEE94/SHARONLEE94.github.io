@@ -60,12 +60,10 @@ nav::after{
 #mainNav{
     position: fixed;
     width: 228px;
-    /* height: 100%; */
     top:73px;
     left: -200px;
     box-sizing: border-box;
     padding: 15px;
-    /* background-color: #003d50; */
 
 }
 #mainNav > ul > li > a{
@@ -84,7 +82,6 @@ nav::after{
 .subNav{
     overflow: hidden;
     position: relative;
-    left: -15px;
     display: none;
 }
 .subNav.on{

@@ -39,7 +39,9 @@ var $p4Span = $("#p4");
 
   $mainClick.on("click", openNav);
   
-  function openNav() {
+  
+  function openNav(event) {
+    event.preventDefault();
     
     var $this = $(this);
     var targetSelector = $this.data("target");
@@ -51,6 +53,7 @@ var $p4Span = $("#p4");
     $mainNav.mouseleave(function() {
       $subNav.removeClass("on");
     });
+    return false;
   };
   
 
