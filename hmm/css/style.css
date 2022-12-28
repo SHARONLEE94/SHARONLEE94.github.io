@@ -54,14 +54,55 @@ nav::after{
 }
 @keyframes change{
     100%{
-        transform: translateY(-50%) rotate(225deg);
+        transform: translateY(-50%) rotate(45deg);
     }
 }
 #mainNav{
+    position: fixed;
+    width: 228px;
+    /* height: 100%; */
+    top:73px;
+    left: -200px;
+    box-sizing: border-box;
+    padding: 15px;
+    /* background-color: #003d50; */
+
+}
+#mainNav > ul > li > a{
+    color: #bdcd35;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 42px;
+}
+#mainNav.navOpen{
+    left: 0;
+    transition-duration: 600ms;
+}
+.subNavWrap{
+    position: relative;
+}
+.subNav{
+    overflow: hidden;
+    position: relative;
+    left: -15px;
     display: none;
 }
-#subNav{
-    display: none;
+.subNav.on{
+    display: block;
+}
+.subNav{
+    background-color: rgba(189, 205, 53, 0.5);
+}
+.subNav > li > a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 15px;
+}
+.subNav > li:hover > a{
+    background-color: #bdcd35;
 }
 #logo{
     position: absolute;
@@ -90,7 +131,7 @@ nav::after{
 }
 /* p1 */
 #p1{
-    background: url(../img/p1_bg.jpg) no-repeat;
+    background: url(../img/p1_bg.png) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -172,13 +213,13 @@ nav::after{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: #20265b;
-    /* background: linear-gradient(to top, rgb(255,255,255) 50%, rgb(32, 38, 91) 50%); */
+    background: linear-gradient(to top, rgb(1, 76, 79) 1%, rgb(32, 38, 91) 99%);
     position: relative;
     z-index: 10;
-    border: 1px solid #333333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
     
     color: #f7f7f6;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
     font-weight: 500;
 }
 #p2Wrap{
