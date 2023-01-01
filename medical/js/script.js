@@ -30,13 +30,13 @@ function navMouseEvent() {
     var $this = $(this);
     
     $this.addClass("on")
-    .siblings(".on").removeClass("on");
+         .siblings(".on").removeClass("on");
     
     var targetSelector = $this.data("target");
     
     $subWrapCons.removeClass("on")
-    .filter(targetSelector)
-    .addClass("on");
+                .filter(targetSelector)
+                .addClass("on");
     
     $("nav").mouseleave(function() {
         $subWrapCons.removeClass("on");
