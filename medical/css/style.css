@@ -841,7 +841,8 @@ header::after{
     }
 }
 #p4_btn > li > a > img{
-    display: none;
+    height: 60px;
+    margin: 20px auto
 }
 #p4_btn > li > p{
     text-align: center;
