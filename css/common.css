@@ -1,0 +1,46 @@
+/* color : #faf5ea(배경색), #3b3a37(글자색), 92ab8f(초록), f8d7de(분홍), f6ef87(노랑) */
+/* font-family: 'Dongle', sans-serif, monospace; 본문체 
+/ font-family: 'Black Han Sans', sans-serif, monospace;강조체 */
+
+/* COMMON */
+html, body{
+  height: 100%;
+  font-size: 30px;
+  color: #3b3a37;
+  font-family: 'Dongle', sans-serif, monospace;
+  box-sizing: border-box;
+}
+a{
+  color: #3b3a37;
+  font-family: 'Dongle', sans-serif, monospace;
+  text-decoration: none;
+}
+img{
+  display:  block;
+}
+
+/* NAV */
+header{
+  width: 90px;
+  height: 100%;
+  box-shadow: 0 0 15px #333;
+  position: fixed;
+  top: 0; left: 0; bottom:0;
+  
+  z-index: 999;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.logo{
+  display: block;
+  width: 100%;
+  height: 90px;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 80px;
+  text-align: center;
+}

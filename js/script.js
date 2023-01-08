@@ -49,8 +49,7 @@ $(function() {
 
     typing();
 
- // -----------------------------------------------------------------------------------------------------------------------------------------------------
- // 2. 휠
+    // 2. 휠
     
     var $body = $("body");
     var $scroll = $(".scroll");
@@ -81,16 +80,10 @@ $(function() {
         if(nextPageIndex == 9) {
             $("#contact").addClass("conrot");
         }
-
-        // console.log("nextpageIndex");
-        // console.log(nextPageIndex);
-        // nextPageIndex = $navList.index(this);
         
         turnPage();
     });
     
-    
-    // -----------------------------------------------------------------
     // wheel 이벤트 
     window.addEventListener("wheel", function(event) {
         var duration1 = "500ms";
@@ -104,7 +97,7 @@ $(function() {
             
             if(thisPageIndex >= lastPageIndex) return;
             
-            nextPageIndex = thisPageIndex +1; //++
+            nextPageIndex = thisPageIndex +1;
 
             // navBar
             if(nextPageIndex == 0 || nextPageIndex == 9){
@@ -214,7 +207,6 @@ $(function() {
             }
             // 회전
             if(nextPageIndex == 9) {
-                // console.log("yes!!!!!!!");
                 $("#contact").addClass("conrot");
             }
   
@@ -223,7 +215,7 @@ $(function() {
             
             if(thisPageIndex <= 0) return;
             
-            nextPageIndex = thisPageIndex -1; //--
+            nextPageIndex = thisPageIndex -1;
             
             // navBar
             if(nextPageIndex == 0 || nextPageIndex == 9){
@@ -343,8 +335,7 @@ $(function() {
         
     }, {passive:false});
 
-    
-    // -----------------------------------------------------------------
+
     // keydown 이벤트
     $body.on("keydown", function(event) {
 
@@ -595,7 +586,6 @@ $(function() {
     });
     
     
-    // -----------------------------------------------------------------
     // turnPage 함수
     function turnPage () {
         if(thisPageIndex == nextPageIndex) return;
@@ -604,28 +594,10 @@ $(function() {
         var direction = 0;
         if(nextPageIndex > thisPageIndex) {
             direction = 1;
-            // console.log("direction = 1");
         }else{
             direction = -1;
-            // console.log("direction = -1");
         };
-        // var direction=nextPageIndex>thisPageIndex?1:-1;
-    
-        // 수평 또는 수직 이동
-        // var directionPage = 0;
-        // if(direction = 1){
-        //     directionPage = nextPageIndex;
-        // } else{
-        //     directionPage = thisPageIndex;
-        // }
-        // var axis = 0;
-        // if(bottomPageIndexes.indexOf(directionPage >= 0)){
-        //     axis="top";
-        // } else{
-        //     axis="left";
-        // }
         var axis = bottomPageIndexes.indexOf(direction == 1 ?nextPageIndex :thisPageIndex)>=0 ?"top":"left";
-    
     
         // 스타일 속성
         var nextPagePreStyles = {top:0, left:0};
@@ -650,7 +622,7 @@ $(function() {
         });
     };
 
-    // -----------------------------------------------------------------
+
     // 새창열기
     var $page7Open = $("#page7 > .conbg > p > a");
     var $page9Open = $("#page9 > .conbg > p > a");
@@ -665,8 +637,5 @@ $(function() {
         window.open(this.href);
     }
     
-
-    // -----------------------------------------------------------------
-    // 
     
 });
