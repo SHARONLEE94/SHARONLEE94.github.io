@@ -45,14 +45,17 @@ const searchDelayEls = [...searchWrapEl.querySelectorAll("li")];
 
 
 searchStarterEl.addEventListener("click", showSearch);
-searchCloserEl.addEventListener("click", hideSearch);
+searchCloserEl.addEventListener("click", function(event) {
+  event.stopPropagation();
+  hideSearch();
+});
 searchShadowEl.addEventListener("click", hideSearch);
 
 
 function showSearch() {
   headerEl.classList.add("searching");
 
-  document.documentElement.classList.add('fixed');
+  stopScroll();
 
   //순차적으로 나타남
   headerMenuEls.reverse().forEach(function(el, index) {
@@ -72,7 +75,7 @@ function showSearch() {
 function hideSearch() {
   headerEl.classList.remove("searching");
 
-  document.documentElement.classList.remove('fixed');
+  playScroll();
 
   // 순차적으로 사라짐
   headerMenuEls.reverse().forEach(function(el, index) {
@@ -87,8 +90,78 @@ function hideSearch() {
   searchInputEl.value='';
 }
 
-//요소의 가시성 관찰
+function playScroll() {
+  document.documentElement.classList.remove('fixed');
+}
+function stopScroll() {
+  document.documentElement.classList.add('fixed');
+}
 
+
+// 헤더 메뉴 토글!
+const menuStarterEl = document.querySelector("header .menu-starter");
+menuStarterEl.addEventListener("click", function() {
+  if(headerEl.classList.contains("menuing")) {
+    headerEl.classList.remove("menuing");
+    searchInputEl.value='';
+    playScroll();
+  }else{
+    headerEl.classList.add("menuing");
+    stopScroll();
+  }
+});
+
+
+// 헤더 검색
+const searchTextFiedlEl = document.querySelector("header .textfield");
+const searchCancelEl = document.querySelector("header .search-canceler");
+searchTextFiedlEl.addEventListener("click", function() {
+  headerEl.classList.add("searching--mobile");
+  searchInputEl.focus();
+});
+searchCancelEl.addEventListener("click", function() {
+  headerEl.classList.remove("searching--mobile");
+});
+
+
+// 예외처리
+window.addEventListener("resize", function() {
+  if(this.window.innerWidth <= 740) {
+    headerEl.classList.remove("searching");
+  }else {
+    headerEl.classList.remove("searching--mobile");
+  }
+});
+
+
+// 
+const navEl = document.querySelector("nav");
+const navMenuToggleEl = navEl.querySelector(".menu-toggler");
+const navMenuShadowEl = navEl.querySelector(".shadow");
+
+navMenuToggleEl.addEventListener("click", function() {
+  if(navEl.classList.contains("menuing")){
+    hideNavMenu();
+  }else{
+    showNavMenu();
+  }
+});
+
+navEl.addEventListener("click", function(event) {
+  event.stopPropagation();
+});
+navMenuShadowEl.addEventListener("click", hideNavMenu);
+window.addEventListener("click",  hideNavMenu);
+
+function showNavMenu() {
+  navEl.classList.add("menuing");
+}
+function hideNavMenu() {
+  navEl.classList.remove("menuing");
+}
+
+
+//요소의 가시성 관찰
 const io = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if(!entry.isIntersecting){
@@ -173,6 +246,7 @@ navigations.forEach(function(nav) {
   mapEl.innerHTML = /*html*/ `
   <h3>
     <span class="text">${nav.title}</span>
+    <span class="icon">+</span>
   </h3>
   <ul>
     ${mapList}
@@ -186,3 +260,12 @@ navigations.forEach(function(nav) {
 // 날짜
 const thisYearEl = document.querySelector("span.this-year");
 thisYearEl.textContent= new Date().getFullYear();
+
+
+const mapEl = document.querySelectorAll("footer .navigations .map");
+mapEl.forEach(function(el){
+  const h3El= el.querySelector("h3");
+  h3El.addEventListener("click", function() {
+    el.classList.toggle("active");
+  });
+});
