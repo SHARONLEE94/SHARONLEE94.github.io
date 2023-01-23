@@ -70,7 +70,9 @@ $slide.hover(
 
 
 // bulet
-var $slideBullet = $("<div></div>").attr("id","slide_bullet").appendTo($slide);
+var $slideBullet = $("<div></div>")
+                    .attr("id","slide_bullet")
+                    .appendTo($slide);
 
 $slideWrap.children().each(function() {
     $("<button></button>").appendTo($slideBullet);
@@ -79,6 +81,8 @@ $slideWrap.children().each(function() {
 
 // bulletMove
 var $slideBulletList = $slideBullet.find("button");
+$slideBulletList.eq(photoIndex).addClass("on");
+
 $slideBulletList.on("click",function() {
 
     if(isAnimated) return;
