@@ -132,6 +132,17 @@ function imgSlide () {
         });
 };
 
+//menu-starter
+var $navWrapEl = $("#nav_wrap");
+var $menuStarterEl = $("#nav_wrap .menu-starter");
+    $menuStarterEl.on("click", function() {
+    if($navWrapEl.hasClass("menuing")) {
+        $navWrapEl.removeClass("menuing");
+    }else{
+        $navWrapEl.addClass("menuing");
+    }
+  });
+
 
 // 3.pointer
 var $pointerButton = $(".pointer_button > div");

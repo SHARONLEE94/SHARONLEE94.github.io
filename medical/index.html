@@ -17,6 +17,8 @@
     <!-- 스타일 시트 -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/768px.css">
     
     
     <!-- 스크립트 -->
@@ -37,13 +39,21 @@
             </div>
         </div>
 
-        <nav id="nav_area"><!--nav_area-->
+        <nav id="nav_area" ><!--nav_area-->
             <div id="nav_wrap" class="w1200"> <!--nav_wrap-->
                 <a href="index.html">
                     <img src="img/logo.png" alt="logo">
                 </a>
                 
                 <ul id="main_nav">
+                    <li class="menu-starter">
+                        <a>
+                          <div>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </a>
+                    </li>
                     <li data-target="#hospital_introduce"><a href="#">병원소개</a></li>
                     <li data-target="#clinic"><a href="#">클리닉</a></li>
                     <li data-target="#special_clinic"><a href="#">특진 클리닉</a></li>
@@ -85,13 +95,6 @@
                     </ul>
                 </div> <!--subwrap end-->
 
-                <!-- 반응형 메뉴바 -->
-                <div href="#" id="bar">
-                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-                    <a href="#"><img src="img/search.png" alt="btn_search"></a>
-                    <span>MenuBar</span>
-                </div>
-
             </div> <!--nav_wrap end-->
         </nav> <!--nav_area end-->
     </header>
@@ -103,6 +106,12 @@
             <a><img src="img/search.png" alt="btn_search"></a>
         </div>
     </form>
+
+    <div id="fixMenu">
+        <a href="#"><span>온라인<br>예약/상담</span></a>
+        <a href="#"><span>전화문의<br>123-456-789</span></a>
+        <a href="#"><span>찾아오시는 길</span></a>
+    </div>
 
     <div id="contentsWrap">
 
