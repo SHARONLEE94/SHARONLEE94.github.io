@@ -241,7 +241,7 @@ $textCon.focusin(focusReset);
         
         if($length== 0){
             $this.css({
-                "border":"5px solid #eb1358"
+                "border":"2px solid #eb1358"
             });
         }else{
             $this.removeAttr("style");
@@ -254,11 +254,11 @@ $textCon.focusin(focusReset);
         
         if($length == 0){
             $this.css({
-                "border":"5px solid #eb1358",
+                "border":"2px solid #eb1358",
             });
         }else if($length < 4){
             $this.css({
-                "border":"5px solid gold"
+                "border":"2px solid gold"
             });
             alert("4글자 이상 입력하세요.");
         }else{

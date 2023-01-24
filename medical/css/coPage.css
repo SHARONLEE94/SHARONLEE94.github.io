@@ -1,12 +1,5 @@
-/* 색상 */
-/* 검정-#333333 배경-#fefefe 다홍(주조색)-#eb1358 > 다홍2-#ef4279 > 다홍3-#f7a1bc > 분홍-#fbd0de 자주색-#760a2c */
-/* 회색-#cfcfcf 사람색상-#D4B3B3*/
-/* 폰트 */
-/*  */
-/* font-family: 'Do Hyeon', sans-serif, monospace; 강조 */
-/* font-family: 'Nanum Pen Script', cursive, monospace; 필기체느낌 */
-/* font-family: 'Noto Sans KR', sans-serif, monospace */
-
+/* 1. pc 기준 */
+@media screen and (min-width : 1200px) {
 html, body{
     width: 100%;
     height: 100%;
@@ -35,6 +28,7 @@ header::after{
     display: block;
     clear: both;
 }
+
 /* personal_information & w1200*/
 #personal_information{
     width: 100%;
@@ -96,11 +90,16 @@ header::after{
     float: left;
     margin: 0 40px;
 }
+#main_nav .menu-starter{
+    display: none;
+}
 #main_nav > li{
     width: 20%;
     float: left;
     font-size: 18px;
-
+}
+#main_nav > li:nth-child(2){
+    display: none;
 }
 #main_nav > li.on > a{
     color: #eb1358;
@@ -112,7 +111,6 @@ header::after{
     width: 100%;
     text-align: center;
     padding: 26px 0;
-
     display: block;
 }
 
@@ -134,9 +132,7 @@ header::after{
     position: fixed;
     top: 0; left : 0; bottom: 0;
     background-color: rgba(51, 51, 51,95%);
-
     z-index: 999;
-
     display: none;
 }
 #search_open{
@@ -144,8 +140,6 @@ header::after{
     position: relative;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-
-    /* background-color: #fefefe; */
 }
 #search_page > span{
     display: block;
@@ -163,12 +157,15 @@ header::after{
     width: 100%;
     height: 80px;
     float: left;
-    border: 10px solid #eb1358;
+    border: 3px solid #eb1358;
     border-radius: 100px;
     box-sizing: border-box;
     padding: 18px;
-
     font-size: 23px;
+}
+#search_open > input:focus{
+    outline: none;
+    border: 8px solid #eb1358;
 }
 #search_open > a{
     display: block;
@@ -371,4 +368,5 @@ footer > section{
 }
 #footerInfo > ul > li:last-child{
     border: none;
+}
 }

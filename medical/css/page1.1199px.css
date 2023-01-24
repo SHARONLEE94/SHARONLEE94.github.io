@@ -1,0 +1,175 @@
+/* 2. 테블릿 기준 */
+@media screen and (max-width:1199px){
+  
+  /* inner_therapy */
+  #inner_therapy > h2{
+      padding: 30px 0;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+  }
+  #pBackground{
+      background-color: #fbecf2;
+      padding: 50px 0;
+  }
+  .summary{
+      margin: 0 auto;
+  }
+  .summary > h3{
+      font-size: 23px;
+      color: #eb1358;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 13px;
+  }
+  .summary > p{
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .summary > ul{
+      text-align: center;
+  }
+  .summary > ul > li{
+      background: url(../img/check2.png) no-repeat;
+      background-size: contain;
+      margin-bottom: 10px;
+  }
+  .summary > ul > li:nth-child(1){
+      background-position-x: 34%;
+  }
+  .summary > ul > li:nth-child(2){
+      background-position-x: 37%;
+  }
+  .summary > ul > li:nth-child(3){
+      background-position-x: 31.5%;
+  }
+  
+  /* inner_nav */
+  #inner_nav::after{
+      content: "";
+      display: block;
+      clear: both;
+  }
+  #inner_nav > ul{
+      width: 763px;
+      margin: 50px auto;
+  }
+  #inner_nav > ul::after{
+      content: "";
+      display: block;
+      clear: both;
+  }
+  #inner_nav > ul > li{
+      float: left;
+      text-align: center;
+      border: 1px solid #eb1358;
+      margin-right: 7px;
+  }
+  #inner_nav > ul > li:last-child{
+      margin-right: 0;
+  }
+  #inner_nav > ul > li >a{
+      display: block;
+      width: 145px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: 500;
+  }
+  #inner_nav > ul > li:hover >a{
+      background-color: #f7a1bc;
+      color: #fefefe;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+  
+      transform: translate(-3px, -3px);
+  }
+  
+  /* con2 */
+  #con2{
+    width: 80%;
+    margin: 0 auto;
+  }
+  #con2_sub1 > h3{
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 13px;
+  }
+  #con2_sub1 > h3::before{
+      content: "";
+      display: inline-block;
+      height: 23px;
+      border-left: 5px solid #eb1358;
+      margin-right: 10px;
+  }
+  .pWrap > p{
+      line-height: 20px;
+  }
+  .pWrap > h4{
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: #eb1358;
+  }
+  #con2_sub2{
+      margin: 50px 0;
+  }
+  #con2_sub2 > h3{
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 13px;
+  }
+  #con2_sub2 > h3::before{
+      content: "";
+      display: inline-block;
+      height: 23px;
+      border-left: 5px solid #eb1358;
+      margin-right: 10px;
+  }
+  #con2_sub2 > article > img{
+      width: 400px;
+      margin: 30px auto;
+      margin-bottom: 80px;
+  }
+  
+  /* quickClick */
+  #qickClick{
+      width: 478px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  }
+  #qickClick::after{
+      content: "";
+      display: block;
+      clear: both;
+  }
+  #qickClick > a{
+      display: block;
+      box-sizing: border-box;
+      width: 150px;
+      height: 50px;
+      border-radius: 100px;
+      border: 2px solid #eb1358;
+      background-color: #eb1358;
+      color: #fefefe;
+      line-height: 50px;
+      margin-right: 10px;
+      float: left;
+  }
+  #qickClick > a:nth-child(1){
+      padding: 0 24px;
+  }
+  #qickClick > a:nth-child(2){
+      padding: 0 12px;
+  }
+  #qickClick > a:nth-child(3){
+      padding: 0 24px;
+  }
+  #qickClick > a:last-child{
+      margin-right: 0;
+  }
+  #qickClick > a:hover{
+      box-sizing: border-box;
+      background-color: #fefefe;
+      color: #eb1358;
+  }
+ 
+}
